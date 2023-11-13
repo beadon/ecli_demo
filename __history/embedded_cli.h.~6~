@@ -36,7 +36,7 @@ extern "C" {
 //typedef struct CliCommand CliCommand;
 //typedef struct CliCommandBinding CliCommandBinding;
 //typedef struct EmbeddedCli EmbeddedCli;
-//typedef struct EmbeddedCliConfig EmbeddedCliConfig;
+typedef struct EmbeddedCliConfig EmbeddedCliConfig;
 
 typedef struct CliCommand {
     /**
@@ -91,7 +91,7 @@ typedef struct CliCommandBinding {
     void (*binding)(EmbeddedCli *cli, char *args, void *context);
 } CliCommandBinding;
 
-typedef struct EmbeddedCli {
+struct EmbeddedCli {
     /**
      * Should write char to connection
      * @param cli - pointer to cli that executed this function
@@ -116,12 +116,12 @@ typedef struct EmbeddedCli {
      * Pointer to actual implementation, do not use.
      */
     void *_impl;
-} EmbeddedCli;
+};
 
 /**
  * Configuration to create CLI
  */
-typedef struct EmbeddedCliConfig {
+struct EmbeddedCliConfig {
     /**
      * Invitation string. Is printed at the beginning of each line with user
      * input
@@ -171,7 +171,7 @@ typedef struct EmbeddedCliConfig {
      * complete current command manually.
      */
     bool enableAutoComplete;
-} EmbeddedCliConfig;
+};
 
 /**
  * Returns pointer to default configuration for cli creation. It is safe to

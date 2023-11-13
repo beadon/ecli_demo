@@ -1,9 +1,6 @@
 #include "main.h"
-#define EMBEDDED_CLI_IMPL
+//#define EMBEDDED_CLI_IMPL
 #include "embedded_cli.h"
-
-// compiler won't find the .c unless added here
-// #include "embedded_cli.c"
 
 EmbeddedCli *cli = embeddedCliNewDefault();
 
@@ -12,7 +9,7 @@ void main()
 {
 
   EmbeddedCliConfig *config = embeddedCliDefaultConfig();
-  config->maxBindingCount = 16;
+  config.maxBindingCount = 16;
 
    while(TRUE)
    {

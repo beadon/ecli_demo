@@ -2,9 +2,6 @@
 #define EMBEDDED_CLI_IMPL
 #include "embedded_cli.h"
 
-// compiler won't find the .c unless added here
-// #include "embedded_cli.c"
-
 EmbeddedCli *cli = embeddedCliNewDefault();
 
 

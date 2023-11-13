@@ -59,7 +59,6 @@
  */
 #define CLI_FLAG_AUTOCOMPLETE_ENABLED 0x20u
 
-// moved to .h
 typedef struct EmbeddedCliImpl EmbeddedCliImpl;
 typedef struct AutocompletedCommand AutocompletedCommand;
 typedef struct FifoBuf FifoBuf;

@@ -31,14 +31,18 @@ extern "C" {
 #define BYTES_TO_CLI_UINTS(bytes) \
   (((bytes) + CLI_UINT_SIZE - 1)/CLI_UINT_SIZE)
 
-// Compiler does not properly handle the structs
-// unless typedef is next to the definition
-//typedef struct CliCommand CliCommand;
-//typedef struct CliCommandBinding CliCommandBinding;
-//typedef struct EmbeddedCli EmbeddedCli;
-//typedef struct EmbeddedCliConfig EmbeddedCliConfig;
+typedef struct CliCommand CliCommand;
+typedef struct CliCommandBinding CliCommandBinding;
+typedef struct EmbeddedCli EmbeddedCli;
+typedef struct EmbeddedCliConfig EmbeddedCliConfig;
 
-typedef struct CliCommand {
+// Moved from .c
+typedef struct EmbeddedCliImpl EmbeddedCliImpl;
+typedef struct AutocompletedCommand AutocompletedCommand;
+typedef struct FifoBuf FifoBuf;
+typedef struct CliHistory CliHistory;
+
+struct CliCommand {
     /**
      * Name of the command.
      * In command "set led 1 1" "set" is name
@@ -52,12 +56,12 @@ typedef struct CliCommand {
      * Use tokenize functions to easily get individual tokens
      */
     char *args;
-} CliCommand;
+};
 
 /**
  * Struct to describe binding of command to function and
  */
-typedef struct CliCommandBinding {
+struct CliCommandBinding {
     /**
      * Name of command to bind. Should not be NULL.
      */
@@ -89,9 +93,9 @@ typedef struct CliCommandBinding {
      * @param context
      */
     void (*binding)(EmbeddedCli *cli, char *args, void *context);
-} CliCommandBinding;
+};
 
-typedef struct EmbeddedCli {
+struct EmbeddedCli {
     /**
      * Should write char to connection
      * @param cli - pointer to cli that executed this function
@@ -116,12 +120,12 @@ typedef struct EmbeddedCli {
      * Pointer to actual implementation, do not use.
      */
     void *_impl;
-} EmbeddedCli;
+};
 
 /**
  * Configuration to create CLI
  */
-typedef struct EmbeddedCliConfig {
+struct EmbeddedCliConfig {
     /**
      * Invitation string. Is printed at the beginning of each line with user
      * input
@@ -171,7 +175,7 @@ typedef struct EmbeddedCliConfig {
      * complete current command manually.
      */
     bool enableAutoComplete;
-} EmbeddedCliConfig;
+};
 
 /**
  * Returns pointer to default configuration for cli creation. It is safe to
