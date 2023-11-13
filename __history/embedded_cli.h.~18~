@@ -1,6 +1,7 @@
 #ifndef EMBEDDED_CLI_H
 #define EMBEDDED_CLI_H
 
+
 #ifdef __cplusplus
 
 extern "C" {
@@ -30,8 +31,8 @@ extern "C" {
 #define BYTES_TO_CLI_UINTS(bytes) \
   (((bytes) + CLI_UINT_SIZE - 1)/CLI_UINT_SIZE)
 
-// Compiler handles the structs
-// only if typedef is next to the definition
+// Compiler does not properly handle the structs
+// unless typedef is next to the definition
 // typedef struct CliCommand CliCommand;
 // typedef struct EmbeddedCli EmbeddedCli;
 // typedef struct CliCommandBinding CliCommandBinding;

@@ -17,5 +17,5 @@
 #include "embedded_cli.h"
 
 // eCLI Requirement
-char *writeChar(EmbeddedCli *embeddedCli, char c);
+void *writeChar(EmbeddedCli *embeddedCli, char c);
 void ecli_setup();
