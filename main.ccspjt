@@ -4,11 +4,20 @@ Processor_Text=PIC18F57Q84
 CCSVerions=5.116
 Compiler=PCH
 CCSVersion=5.116
+Development_Mode=
+ToolSuite=CCS
 [Target Data]
 FileList=main.c
+BuildTool=C-COMPILER
+OptionString=+FH
+AdditionalOptionString=
+BuildRequired=1
 [Directories]
 Include=
-[C:\Users\beadon\Documents\GitHub\embedded-cli-mods\main]
+Library=
+LinkerScript=
+output=
+[C:\Users\beadon\Documents\GitHub\ecli_demo\main]
 Type=4
 [mru-list]
 1=main.c
@@ -17,11 +26,23 @@ Fixed=5.116
 
 [fileformats]
 forcecoff=0
+debug=4
+error=2
+object=0
+list=0
+scratch=0
+sta=1
+tre=1
+expandtree=0
+allerrors=1
+allwarnings=1
+stayupne=3
+stayupoe=0
 
 [ProjectLog]
 Days=1
 D1=13-11-2023
-D1_L=4
+D1_L=12
 D1_L1=[47160]Project Opened.
 D1_L2=[47165]Started Editing.
 D1_L3=[47987]Stopped Editing.
@@ -30,6 +51,14 @@ TotalDebug=0
 D1_E=9
 D1_D=0
 D1_L4=[48323]Project Closed.
+D1_L5=[48516]Project Opened.
+D1_L6=[48900]Project Closed.
+D1_L7=[48940]Project Opened.
+D1_L8=[49052]Project Closed.
+D1_L9=[49114]Project Opened.
+D1_L10=[49132]Project Closed.
+D1_L11=[49220]Project Opened.
+D1_L12=[49243]Project Closed.
 
 [Opened Files]
 1=main.c
@@ -41,15 +70,25 @@ t2=1
 t3=1
 [main.c]
 Type=4
-[Units]
-Count=1
-1=main (main)
-2=embedded_cli.h
-Link=0
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
 
 [defines]
-buildcount=1
+buildcount=2
+enabled=0
+chip=1
+D1=
+V1=
 
 [ExtraIncludes]
 Count=1
-1=main=c:\users\beadon\documents\github\embedded-cli-mods\embedded_cli.h
+1=main=c:\users\beadon\documents\github\ecli_demo\embedded_cli.h
+
+[Windows]
+0=0000 %S 0 0 796 451 3 0
+[Units]
+Count=1
+1=main (main)

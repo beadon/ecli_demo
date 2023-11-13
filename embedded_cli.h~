@@ -42,7 +42,7 @@ struct CliCommand {
      * Name of the command.
      * In command "set led 1 1" "set" is name
      */
-    char *name;
+    const char *name;
 
     /**
      * String of arguments of the command.
@@ -60,14 +60,14 @@ struct CliCommandBinding {
     /**
      * Name of command to bind. Should not be NULL.
      */
-    char *name;
+    const char *name;
 
     /**
      * Help string that will be displayed when "help <cmd>" is executed.
      * Can have multiple lines separated with "\r\n"
      * Can be NULL if no help is provided.
      */
-    char *help;
+    const char *help;
 
     /**
      * Flag to perform tokenization before calling binding function.
@@ -125,7 +125,7 @@ struct EmbeddedCliConfig {
      * Invitation string. Is printed at the beginning of each line with user
      * input
      */
-    char *invitation;
+    const char *invitation;
     
     /**
      * Size of buffer that is used to store characters until they're processed
@@ -250,7 +250,7 @@ bool embeddedCliAddBinding(EmbeddedCli *cli, CliCommandBinding binding);
  * @param cli
  * @param string
  */
-void embeddedCliPrint(EmbeddedCli *cli, char *string);
+void embeddedCliPrint(EmbeddedCli *cli, const char *string);
 
 /**
  * Free allocated for cli memory
@@ -278,7 +278,7 @@ void embeddedCliTokenizeArgs(char *args);
  * @param pos (counted from 1)
  * @return token
  */
-char *embeddedCliGetToken(char *tokenizedStr, uint16_t pos);
+const char *embeddedCliGetToken(const char *tokenizedStr, uint16_t pos);
 
 /**
  * Same as embeddedCliGetToken but works on non-const buffer
@@ -295,14 +295,14 @@ char *embeddedCliGetTokenVariable(char *tokenizedStr, uint16_t pos);
  * @param token - token to find
  * @return position (increased by 1) or zero if no such token found
  */
-uint16_t embeddedCliFindToken(char *tokenizedStr, char *token);
+uint16_t embeddedCliFindToken(const char *tokenizedStr, const char *token);
 
 /**
  * Return number of tokens in tokenized string
  * @param tokenizedStr
  * @return number of tokens
  */
-uint16_t embeddedCliGetTokenCount(char *tokenizedStr);
+uint16_t embeddedCliGetTokenCount(const char *tokenizedStr);
 
 #ifdef __cplusplus
 }
