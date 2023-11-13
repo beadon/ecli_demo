@@ -42,13 +42,13 @@ stayupoe=0
 [ProjectLog]
 Days=1
 D1=13-11-2023
-D1_L=24
+D1_L=28
 D1_L1=[47160]Project Opened.
 D1_L2=[47165]Started Editing.
 D1_L3=[47987]Stopped Editing.
-TotalEdit=37
+TotalEdit=54
 TotalDebug=0
-D1_E=37
+D1_E=54
 D1_D=0
 D1_L4=[48323]Project Closed.
 D1_L5=[48516]Project Opened.
@@ -71,6 +71,10 @@ D1_L21=[51221]Project Opened.
 D1_L22=[51290]Started Editing.
 D1_L23=[51887]Stopped Editing.
 D1_L24=[51889]Started Editing.
+D1_L25=[52860]Stopped Editing.
+D1_L26=[53066]Project Closed.
+D1_L27=[53130]Project Opened.
+D1_L28=[53181]Started Editing.
 
 [Opened Files]
 1=main.c
@@ -83,7 +87,7 @@ t3=1
 4=..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlib.h
 t4=1
 5=embedded_cli.c
-t5=374
+t5=1
 [main.c]
 Type=4
 Path=

@@ -1,9 +1,9 @@
-D G "__PCH__" 6 401 ""5.116""
-D G "__DEVICE__" 6 401 "5784"
-D G "__DATE__" 6 401 ""13-Nov-23""
-D G "__TIME__" 6 401 ""14:29:40""
-D G "_UNICODE" 6 401 ""?""
-D G "__EVAL" 6 401 ""?"" "Standard Header file for the PIC18F57Q84 device ////////////////"
+D G "__PCH__" 0 0 ""5.116""
+D G "__DEVICE__" 0 0 ""
+D G "__DATE__" 0 0 ""13-Nov-23""
+D G "__TIME__" 0 0 ""14:46:23""
+D G "_UNICODE" 0 0 ""?""
+D G "__EVAL" 0 0 ""?"" "Standard Header file for the PIC18F57Q84 device ////////////////"
 c L "set_tris_a" 2 3 32 "FUNCTION"
 F N "set_tris_a" 2 86 ""
 V L "value" 2 86 "int8" `55 
@@ -278,7 +278,7 @@ F B "set_timer0" 2 258 "void(int16 value)" `175
 F N "get_timer0" 2 259 ""
 F B "get_timer0" 2 259 "int8()" `177 
 F N "get_timer0" 2 260 ""
-f G "get_timer0" 2 260 "int16(int8 mode,int8 prescaler)" `178 
+f G "get_timer0" 2 260 "int16()" `178 
 F N "setup_counters" 2 261 ""
 V L "mode" 2 261 "int8" `179 
 V L "prescaler" 2 261 "int8" `180 
@@ -292,7 +292,7 @@ F B "set_rtcc" 2 263 "void(int16 value)" `183
 F N "get_rtcc" 2 264 ""
 F B "get_rtcc" 2 264 "int8()" `185 
 F N "get_rtcc" 2 265 ""
-f G "get_rtcc" 2 265 "int16(int16 mode)" `186  "Constants used for SETUP_TIMER_0() first parameter are:"
+f G "get_rtcc" 2 265 "int16()" `186  "Constants used for SETUP_TIMER_0() first parameter are:"
 D G "T0_INTERNAL" 2 267 "0x8040"
 D G "T0_HFINTOSC" 2 268 "0x8060"
 D G "T0_LFINTOSC" 2 269 "0x8080"
@@ -2590,15 +2590,15 @@ F N "read_adc" 2 2321 ""
 f G "read_adc" 2 2321 "int16()" `810 
 F N "read_adc" 2 2322 ""
 V L "mode" 2 2322 "int8" `811 
-f G "read_adc" 2 2322 "int16(int8 mode,int8 which)" `810 
+f G "read_adc" 2 2322 "int16(int8 mode)" `810 
 F N "adc_done" 2 2323 ""
-F B "adc_done" 2 2323 "int8(int8 mode,int8 which)" `810 
+F B "adc_done" 2 2323 "int8(int8 mode)" `810 
 F N "adc_read" 2 2324 ""
 V L "which" 2 2324 "int8" `812 
 F B "adc_read" 2 2324 "int8(int8 which)" `811 
 F N "adc_read" 2 2325 ""
 V L "which" 2 2325 "int8" `814 
-f G "adc_read" 2 2325 "int16(int8 which,int8 value)" `813 
+f G "adc_read" 2 2325 "int16(int8 which)" `813 
 F N "adc_write" 2 2326 ""
 V L "which" 2 2326 "int8" `814 
 V L "value" 2 2326 "int8" `815 
@@ -3180,9 +3180,9 @@ F B "i2c_transfer_in" 2 2664 "int8(int8 stream,int8 address,*int8 rData,int8 rCo
 F N "spi_xfer" 2 2667 ""
 F B "spi_xfer" 2 2667 "int8()" `1125 
 F N "spi_xfer" 2 2668 ""
-f G "spi_xfer" 2 2668 "int16(int8 data)" `1126 
+f G "spi_xfer" 2 2668 "int16()" `1126 
 F N "spi_xfer" 2 2669 ""
-f G "spi_xfer" 2 2669 "int32(int8 data)" `1126 
+f G "spi_xfer" 2 2669 "int32()" `1126 
 F N "spi_xfer" 2 2670 ""
 V L "data" 2 2670 "int8" `1127 
 F B "spi_xfer" 2 2670 "int8(int8 data)" `1126 
@@ -3262,18 +3262,18 @@ F B "spi_prewrite" 2 2689 "void(int8 ,int32 data)" `1179
 F N "spi_xfer_in" 2 2690 ""
 F B "spi_xfer_in" 2 2690 "int8()" `1182 
 F N "spi_xfer_in" 2 2691 ""
-f G "spi_xfer_in" 2 2691 "int16(int8 bits)" `1183 
+f G "spi_xfer_in" 2 2691 "int16()" `1183 
 F N "spi_xfer_in" 2 2692 ""
-f G "spi_xfer_in" 2 2692 "int32(int8 bits)" `1183 
+f G "spi_xfer_in" 2 2692 "int32()" `1183 
 F N "spi_xfer_in" 2 2693 ""
 V L "bits" 2 2693 "int8" `1184 
 F B "spi_xfer_in" 2 2693 "int8(int8 bits)" `1183 
 F N "spi_xfer_in" 2 2694 ""
 V L "bits" 2 2694 "int8" `1186 
-f G "spi_xfer_in" 2 2694 "int16(int8 bits,int8 bits)" `1185 
+f G "spi_xfer_in" 2 2694 "int16(int8 bits)" `1185 
 F N "spi_xfer_in" 2 2695 ""
 V L "bits" 2 2695 "int8" `1186 
-f G "spi_xfer_in" 2 2695 "int32(int8 bits,int8 bits)" `1185 
+f G "spi_xfer_in" 2 2695 "int32(int8 bits)" `1185 
 F N "spi_xfer_in" 2 2696 ""
 V L "stream" 2 2696 "int8" `1186 
 V L "bits" 2 2696 "int8" `1187 
@@ -3281,11 +3281,11 @@ F B "spi_xfer_in" 2 2696 "int8(int8 stream,int8 bits)" `1185
 F N "spi_xfer_in" 2 2697 ""
 V L "stream" 2 2697 "int8" `1186 
 V L "bits" 2 2697 "int8" `1190 
-f G "spi_xfer_in" 2 2697 "int16(int8 stream,int8 bits,int16 count)" `1188 
+f G "spi_xfer_in" 2 2697 "int16(int8 stream,int8 bits)" `1188 
 F N "spi_xfer_in" 2 2698 ""
 V L "stream" 2 2698 "int8" `1186 
 V L "bits" 2 2698 "int8" `1190 
-f G "spi_xfer_in" 2 2698 "int32(int8 stream,int8 bits,int16 count)" `1188 
+f G "spi_xfer_in" 2 2698 "int32(int8 stream,int8 bits)" `1188 
 F N "spi_transfer" 2 2699 ""
 V L "wData" 2 2699 "*int8" `1189 
 V L "rData" 2 2699 "*int8" `1190 
@@ -3364,9 +3364,9 @@ F B "rtos_stats" 2 2723 "void(int8 task,*int8 stat)" `1237  "#use timer() Protot
 F N "get_ticks" 2 2726 ""
 F B "get_ticks" 2 2726 "int8()" `1240 
 F N "get_ticks" 2 2727 ""
-f G "get_ticks" 2 2727 "int16(int8 stream)" `1241 
+f G "get_ticks" 2 2727 "int16()" `1241 
 F N "get_ticks" 2 2728 ""
-f G "get_ticks" 2 2728 "int32(int8 stream)" `1241 
+f G "get_ticks" 2 2728 "int32()" `1241 
 F N "get_ticks" 2 2729 ""
 V L "stream" 2 2729 "int8" `1242 
 F B "get_ticks" 2 2729 "int8(int8 stream)" `1241 
@@ -4505,209 +4505,209 @@ D G "CLI_FLAG_ESCAPE_MODE" 6 49 "0x08u"
 C G "" 6 51 1 "*"
 D G "CLI_FLAG_DIRECT_PRINT" 6 55 "0x10u"
 D G "CLI_FLAG_AUTOCOMPLETE_ENABLED" 6 60 "0x20u"
-T G "EmbeddedCliImpl" 6 63 "int8" `1716 
-T G "AutocompletedCommand" 6 64 "int8" `1717 
-T G "FifoBuf" 6 65 "int8" `1718 
-T G "CliHistory" 6 66 "int8" `1719 
-C G "" 6 70 1 "*"
-C G "" 6 74 1 "*"
-C G "" 6 78 1 "*"
-C G "" 6 85 1 "*"
-C G "" 6 90 1 "*"
-C G "" 6 95 1 "*"
-C G "" 6 95 1 "*"
-C G "" 6 101 1 "*"
-C G "" 6 101 1 "*"
-C G "" 6 101 1 "*"
-C G "" 6 110 1 "*"
-C G "" 6 110 1 "*"
-C G "" 6 118 1 "*"
-C G "" 6 118 1 "*"
-C G "" 6 124 1 "*"
-C G "" 6 129 1 "*"
-C G "" 6 134 1 "*"
-C G "" 6 141 1 "*"
-C G "" 6 150 1 "*"
-C G "" 6 150 1 "*"
-C G "" 6 156 1 "*"
-C G "" 6 161 1 "*"
-C G "" 6 168 1 "*"
-C G "" 6 168 1 "*"
-C G "" 6 168 1 "*"
-C G "" 6 175 1 "*"
-C G "" 6 175 1 "*"
-C G "" 6 175 1 "*"
-C G "" 6 175 1 "*"
-C G "" 6 183 1 "*"
-V G "defaultConfig" 6 189 "EmbeddedCliConfig" `1748  "* Number of commands that cli adds. Commands:"
-C G "" 6 191 1 "*"
-V G "cliInternalBindingCount" 6 195 "uint16_t" `1749 
-V G "lineBreak" 6 197 "*int8" `1750 
-C L "navigateHistory" 6 199 1 "*"
-C L "navigateHistory" 6 199 1 "*"
-C L "navigateHistory" 6 199 1 "*"
-C L "navigateHistory" 6 199 1 "*"
-C L "navigateHistory" 6 199 1 "*"
-F N "navigateHistory" 6 206 ""
-V L "cli" 6 206 "??0 *" `1753 
-V L "navigateUp" 6 206 "int8" `1754 
-f G "navigateHistory" 6 206 "void(??0 * cli,int8 navigateUp)" `1752  "* Process escaped character. After receiving ESC+[ sequence, all chars up to"
-C L "navigateHistory" 6 208 1 "*"
-C L "navigateHistory" 6 208 1 "*"
-C L "navigateHistory" 6 208 1 "*"
-F N "onEscapedInput" 6 214 ""
-V L "cli" 6 214 "??0 *" `1756 
-V L "c" 6 214 "int8" `1757 
-f G "onEscapedInput" 6 214 "void(??0 * cli,int8 c)" `1755  "* Process input character. Character is valid displayable char and should be"
-C L "onEscapedInput" 6 216 1 "*"
-C L "onEscapedInput" 6 216 1 "*"
-C L "onEscapedInput" 6 216 1 "*"
-F N "onCharInput" 6 222 ""
-V L "cli" 6 222 "??0 *" `1759 
-V L "c" 6 222 "int8" `1760 
-f G "onCharInput" 6 222 "void(??0 * cli,int8 c)" `1758  "* Process control character (like \r or \n) possibly altering state of current"
-C L "onCharInput" 6 224 1 "*"
-C L "onCharInput" 6 224 1 "*"
-C L "onCharInput" 6 224 1 "*"
-F N "onControlInput" 6 230 ""
-V L "cli" 6 230 "??0 *" `1762 
-V L "c" 6 230 "int8" `1763 
-f G "onControlInput" 6 230 "void(??0 * cli,int8 c)" `1761  "* Parse command in buffer and execute callback"
-C L "onControlInput" 6 232 1 "*"
-F N "parseCommand" 6 236 ""
-V L "cli" 6 236 "??0 *" `1765 
-f G "parseCommand" 6 236 "void(??0 * cli)" `1764  "* Print help for given binding (if it is set)"
-C L "parseCommand" 6 238 1 "*"
-F N "printBindingHelp" 6 242 ""
-V L "cli" 6 242 "??0 *" `1767 
-V L "binding" 6 242 "??0 *" `1768 
-f G "printBindingHelp" 6 242 "void(??0 * cli,??0 * binding)" `1766  "* Setup bindings for internal commands, like help"
-C L "printBindingHelp" 6 244 1 "*"
-F N "initInternalBindings" 6 248 ""
-V L "cli" 6 248 "??0 *" `1770 
-f G "initInternalBindings" 6 248 "void(??0 * cli)" `1769  "* Show help for given tokens (or default help if no tokens)"
-C L "initInternalBindings" 6 250 1 "*"
-C L "initInternalBindings" 6 250 1 "*"
-C L "initInternalBindings" 6 250 1 "*"
-F N "onHelp" 6 256 ""
-V L "cli" 6 256 "??0 *" `1772 
-V L "tokens" 6 256 "*int8" `1773 
-V L "context" 6 256 "*void" `1774 
-f G "onHelp" 6 256 "void(??0 * cli,*int8 tokens,*void context)" `1771  "* Show error about unknown command"
-C L "onHelp" 6 258 1 "*"
-C L "onHelp" 6 258 1 "*"
-F N "onUnknownCommand" 6 263 ""
-V L "cli" 6 263 "??0 *" `1776 
-V L "name" 6 263 "*int8" `1777 
-f G "onUnknownCommand" 6 263 "void(??0 * cli,*int8 name)" `1775  "* Return autocompleted command for given prefix."
-C L "onUnknownCommand" 6 265 1 "*"
-C L "onUnknownCommand" 6 265 1 "*"
-C L "onUnknownCommand" 6 265 1 "*"
-C L "onUnknownCommand" 6 265 1 "*"
-C L "onUnknownCommand" 6 265 1 "*"
-F N "getAutocompletedCommand" 6 273 ""
-V L "cli" 6 273 "??0 *" `1779 
-V L "prefix" 6 273 "*int8" `1780 
-f G "getAutocompletedCommand" 6 273 "AutocompletedCommand(??0 * cli,*int8 prefix)" `1778  "* Prints autocompletion result while keeping current command unchanged"
-C L "getAutocompletedCommand" 6 275 1 "*"
-C L "getAutocompletedCommand" 6 275 1 "*"
-F N "printLiveAutocompletion" 6 280 ""
-V L "cli" 6 280 "??0 *" `1782 
-f G "printLiveAutocompletion" 6 280 "void(??0 * cli)" `1781  "* Handles autocomplete request. If autocomplete possible - fills current"
-C L "printLiveAutocompletion" 6 282 1 "*"
-C L "printLiveAutocompletion" 6 282 1 "*"
-C L "printLiveAutocompletion" 6 282 1 "*"
-F N "onAutocompleteRequest" 6 288 ""
-V L "cli" 6 288 "??0 *" `1784 
-f G "onAutocompleteRequest" 6 288 "void(??0 * cli)" `1783  "* Removes all input from current line (replaces it with whitespaces)"
-C L "onAutocompleteRequest" 6 290 1 "*"
-C L "onAutocompleteRequest" 6 290 1 "*"
-F N "clearCurrentLine" 6 295 ""
-V L "cli" 6 295 "??0 *" `1786 
-f G "clearCurrentLine" 6 295 "void(??0 * cli)" `1785  "* Write given string to cli output"
-C L "clearCurrentLine" 6 297 1 "*"
-C L "clearCurrentLine" 6 297 1 "*"
-F N "writeToOutput" 6 302 ""
-V L "cli" 6 302 "??0 *" `1788 
-V L "str" 6 302 "*int8" `1789 
-f G "writeToOutput" 6 302 "void(??0 * cli,*int8 str)" `1787  "* Returns true if provided char is a supported control char:"
-C L "writeToOutput" 6 304 1 "*"
-C L "writeToOutput" 6 304 1 "*"
-C L "writeToOutput" 6 304 1 "*"
-F N "isControlChar" 6 310 ""
-V L "c" 6 310 "int8" `1791 
-f G "isControlChar" 6 310 "int8(int8 c)" `1790  "* Returns true if provided char is a valid displayable character:"
-C L "isControlChar" 6 312 1 "*"
-C L "isControlChar" 6 312 1 "*"
-C L "isControlChar" 6 312 1 "*"
-C L "isControlChar" 6 312 1 "*"
-F N "isDisplayableChar" 6 319 ""
-V L "c" 6 319 "int8" `1793 
-f G "isDisplayableChar" 6 319 "int8(int8 c)" `1792  "* How many elements are currently available in buffer"
-C L "isDisplayableChar" 6 321 1 "*"
-C L "isDisplayableChar" 6 321 1 "*"
-F N "fifoBufAvailable" 6 326 ""
-V L "buffer" 6 326 "??0 *" `1795 
-f G "fifoBufAvailable" 6 326 "uint16_t(??0 * buffer)" `1794  "* Return first character from buffer and remove it from buffer"
-C L "fifoBufAvailable" 6 328 1 "*"
-C L "fifoBufAvailable" 6 328 1 "*"
-C L "fifoBufAvailable" 6 328 1 "*"
-F N "fifoBufPop" 6 334 ""
-V L "buffer" 6 334 "??0 *" `1797 
-f G "fifoBufPop" 6 334 "int8(??0 * buffer)" `1796  "* Push character into fifo buffer. If there is no space left, character is"
-C L "fifoBufPop" 6 336 1 "*"
-C L "fifoBufPop" 6 336 1 "*"
-C L "fifoBufPop" 6 336 1 "*"
-C L "fifoBufPop" 6 336 1 "*"
-F N "fifoBufPush" 6 343 ""
-V L "buffer" 6 343 "??0 *" `1799 
-V L "a" 6 343 "int8" `1800 
-f G "fifoBufPush" 6 343 "int8(??0 * buffer,int8 a)" `1798  "* Copy provided string to the history buffer."
-C L "fifoBufPush" 6 345 1 "*"
-C L "fifoBufPush" 6 345 1 "*"
-C L "fifoBufPush" 6 345 1 "*"
-C L "fifoBufPush" 6 345 1 "*"
-C L "fifoBufPush" 6 345 1 "*"
-C L "fifoBufPush" 6 345 1 "*"
-C L "fifoBufPush" 6 345 1 "*"
-F N "historyPut" 6 355 ""
-V L "history" 6 355 "??0 *" `1802 
-V L "str" 6 355 "*int8" `1803 
-f G "historyPut" 6 355 "int8(??0 * history,*int8 str)" `1801  "* Get item from history. Items are counted from 1 so if item is 0 or greater"
-C L "historyPut" 6 357 1 "*"
-C L "historyPut" 6 357 1 "*"
-C L "historyPut" 6 357 1 "*"
-C L "historyPut" 6 357 1 "*"
-F N "historyGet" 6 364 ""
-V L "history" 6 364 "??0 *" `1805 
-V L "item" 6 364 "uint16_t" `1806 
-f G "historyGet" 6 364 "*int8(??0 * history,uint16_t item)" `1804  "* Remove specific item from history"
-C L "historyGet" 6 366 1 "*"
-C L "historyGet" 6 366 1 "*"
-C L "historyGet" 6 366 1 "*"
-F N "historyRemove" 6 372 ""
-V L "history" 6 372 "??0 *" `1808 
-V L "str" 6 372 "*int8" `1809 
-f G "historyRemove" 6 372 "void(??0 * history,*int8 str)" `1807  "* Return position (index of first char) of specified token"
-C L "historyRemove" 6 374 1 "*"
-C L "historyRemove" 6 374 1 "*"
-C L "historyRemove" 6 374 1 "*"
-C L "historyRemove" 6 374 1 "*"
-F N "getTokenPosition" 6 381 ""
-V L "tokenizedStr" 6 381 "*int8" `1811 
-V L "pos" 6 381 "uint16_t" `1812 
-f G "getTokenPosition" 6 381 "uint16_t(*int8 tokenizedStr,uint16_t pos)" `1810 
-F N "embeddedCliDefaultConfig" 6 383 ""
-F G "embeddedCliDefaultConfig" 6 383 "??0 *()" `1406 
-F N "embeddedCliRequiredSize" 6 395 ""
-V L "config" 6 395 "??0 *" `1814 
-F G "embeddedCliRequiredSize" 6 395 "uint16_t(??0 * config)" `1407 
-V L "bindingCount" 6 396 "uint16_t" `1813 
-F N "cliInternalBindingCount" 6 396 ""
+T G "EmbeddedCliImpl" 6 62 "int8" `1716 
+T G "AutocompletedCommand" 6 63 "int8" `1717 
+T G "FifoBuf" 6 64 "int8" `1718 
+T G "CliHistory" 6 65 "int8" `1719 
+C G "" 6 69 1 "*"
+C G "" 6 73 1 "*"
+C G "" 6 77 1 "*"
+C G "" 6 84 1 "*"
+C G "" 6 89 1 "*"
+C G "" 6 94 1 "*"
+C G "" 6 94 1 "*"
+C G "" 6 100 1 "*"
+C G "" 6 100 1 "*"
+C G "" 6 100 1 "*"
+C G "" 6 109 1 "*"
+C G "" 6 109 1 "*"
+C G "" 6 117 1 "*"
+C G "" 6 117 1 "*"
+C G "" 6 123 1 "*"
+C G "" 6 128 1 "*"
+C G "" 6 133 1 "*"
+C G "" 6 140 1 "*"
+C G "" 6 149 1 "*"
+C G "" 6 149 1 "*"
+C G "" 6 155 1 "*"
+C G "" 6 160 1 "*"
+C G "" 6 167 1 "*"
+C G "" 6 167 1 "*"
+C G "" 6 167 1 "*"
+C G "" 6 174 1 "*"
+C G "" 6 174 1 "*"
+C G "" 6 174 1 "*"
+C G "" 6 174 1 "*"
+C G "" 6 182 1 "*"
+V G "defaultConfig" 6 188 "EmbeddedCliConfig" `1748  "* Number of commands that cli adds. Commands:"
+C G "" 6 190 1 "*"
+V G "cliInternalBindingCount" 6 194 "uint16_t" `1749 
+V G "lineBreak" 6 196 "*int8" `1750 
+C L "navigateHistory" 6 198 1 "*"
+C L "navigateHistory" 6 198 1 "*"
+C L "navigateHistory" 6 198 1 "*"
+C L "navigateHistory" 6 198 1 "*"
+C L "navigateHistory" 6 198 1 "*"
+F N "navigateHistory" 6 205 ""
+V L "cli" 6 205 "??0 *" `1753 
+V L "navigateUp" 6 205 "int8" `1754 
+f G "navigateHistory" 6 205 "void(??0 * cli,int8 navigateUp)" `1752  "* Process escaped character. After receiving ESC+[ sequence, all chars up to"
+C L "navigateHistory" 6 207 1 "*"
+C L "navigateHistory" 6 207 1 "*"
+C L "navigateHistory" 6 207 1 "*"
+F N "onEscapedInput" 6 213 ""
+V L "cli" 6 213 "??0 *" `1756 
+V L "c" 6 213 "int8" `1757 
+f G "onEscapedInput" 6 213 "void(??0 * cli,int8 c)" `1755  "* Process input character. Character is valid displayable char and should be"
+C L "onEscapedInput" 6 215 1 "*"
+C L "onEscapedInput" 6 215 1 "*"
+C L "onEscapedInput" 6 215 1 "*"
+F N "onCharInput" 6 221 ""
+V L "cli" 6 221 "??0 *" `1759 
+V L "c" 6 221 "int8" `1760 
+f G "onCharInput" 6 221 "void(??0 * cli,int8 c)" `1758  "* Process control character (like \r or \n) possibly altering state of current"
+C L "onCharInput" 6 223 1 "*"
+C L "onCharInput" 6 223 1 "*"
+C L "onCharInput" 6 223 1 "*"
+F N "onControlInput" 6 229 ""
+V L "cli" 6 229 "??0 *" `1762 
+V L "c" 6 229 "int8" `1763 
+f G "onControlInput" 6 229 "void(??0 * cli,int8 c)" `1761  "* Parse command in buffer and execute callback"
+C L "onControlInput" 6 231 1 "*"
+F N "parseCommand" 6 235 ""
+V L "cli" 6 235 "??0 *" `1765 
+f G "parseCommand" 6 235 "void(??0 * cli)" `1764  "* Print help for given binding (if it is set)"
+C L "parseCommand" 6 237 1 "*"
+F N "printBindingHelp" 6 241 ""
+V L "cli" 6 241 "??0 *" `1767 
+V L "binding" 6 241 "??0 *" `1768 
+f G "printBindingHelp" 6 241 "void(??0 * cli,??0 * binding)" `1766  "* Setup bindings for internal commands, like help"
+C L "printBindingHelp" 6 243 1 "*"
+F N "initInternalBindings" 6 247 ""
+V L "cli" 6 247 "??0 *" `1770 
+f G "initInternalBindings" 6 247 "void(??0 * cli)" `1769  "* Show help for given tokens (or default help if no tokens)"
+C L "initInternalBindings" 6 249 1 "*"
+C L "initInternalBindings" 6 249 1 "*"
+C L "initInternalBindings" 6 249 1 "*"
+F N "onHelp" 6 255 ""
+V L "cli" 6 255 "??0 *" `1772 
+V L "tokens" 6 255 "*int8" `1773 
+V L "context" 6 255 "*void" `1774 
+f G "onHelp" 6 255 "void(??0 * cli,*int8 tokens,*void context)" `1771  "* Show error about unknown command"
+C L "onHelp" 6 257 1 "*"
+C L "onHelp" 6 257 1 "*"
+F N "onUnknownCommand" 6 262 ""
+V L "cli" 6 262 "??0 *" `1776 
+V L "name" 6 262 "*int8" `1777 
+f G "onUnknownCommand" 6 262 "void(??0 * cli,*int8 name)" `1775  "* Return autocompleted command for given prefix."
+C L "onUnknownCommand" 6 264 1 "*"
+C L "onUnknownCommand" 6 264 1 "*"
+C L "onUnknownCommand" 6 264 1 "*"
+C L "onUnknownCommand" 6 264 1 "*"
+C L "onUnknownCommand" 6 264 1 "*"
+F N "getAutocompletedCommand" 6 272 ""
+V L "cli" 6 272 "??0 *" `1779 
+V L "prefix" 6 272 "*int8" `1780 
+f G "getAutocompletedCommand" 6 272 "AutocompletedCommand(??0 * cli,*int8 prefix)" `1778  "* Prints autocompletion result while keeping current command unchanged"
+C L "getAutocompletedCommand" 6 274 1 "*"
+C L "getAutocompletedCommand" 6 274 1 "*"
+F N "printLiveAutocompletion" 6 279 ""
+V L "cli" 6 279 "??0 *" `1782 
+f G "printLiveAutocompletion" 6 279 "void(??0 * cli)" `1781  "* Handles autocomplete request. If autocomplete possible - fills current"
+C L "printLiveAutocompletion" 6 281 1 "*"
+C L "printLiveAutocompletion" 6 281 1 "*"
+C L "printLiveAutocompletion" 6 281 1 "*"
+F N "onAutocompleteRequest" 6 287 ""
+V L "cli" 6 287 "??0 *" `1784 
+f G "onAutocompleteRequest" 6 287 "void(??0 * cli)" `1783  "* Removes all input from current line (replaces it with whitespaces)"
+C L "onAutocompleteRequest" 6 289 1 "*"
+C L "onAutocompleteRequest" 6 289 1 "*"
+F N "clearCurrentLine" 6 294 ""
+V L "cli" 6 294 "??0 *" `1786 
+f G "clearCurrentLine" 6 294 "void(??0 * cli)" `1785  "* Write given string to cli output"
+C L "clearCurrentLine" 6 296 1 "*"
+C L "clearCurrentLine" 6 296 1 "*"
+F N "writeToOutput" 6 301 ""
+V L "cli" 6 301 "??0 *" `1788 
+V L "str" 6 301 "*int8" `1789 
+f G "writeToOutput" 6 301 "void(??0 * cli,*int8 str)" `1787  "* Returns true if provided char is a supported control char:"
+C L "writeToOutput" 6 303 1 "*"
+C L "writeToOutput" 6 303 1 "*"
+C L "writeToOutput" 6 303 1 "*"
+F N "isControlChar" 6 309 ""
+V L "c" 6 309 "int8" `1791 
+f G "isControlChar" 6 309 "int8(int8 c)" `1790  "* Returns true if provided char is a valid displayable character:"
+C L "isControlChar" 6 311 1 "*"
+C L "isControlChar" 6 311 1 "*"
+C L "isControlChar" 6 311 1 "*"
+C L "isControlChar" 6 311 1 "*"
+F N "isDisplayableChar" 6 318 ""
+V L "c" 6 318 "int8" `1793 
+f G "isDisplayableChar" 6 318 "int8(int8 c)" `1792  "* How many elements are currently available in buffer"
+C L "isDisplayableChar" 6 320 1 "*"
+C L "isDisplayableChar" 6 320 1 "*"
+F N "fifoBufAvailable" 6 325 ""
+V L "buffer" 6 325 "??0 *" `1795 
+f G "fifoBufAvailable" 6 325 "uint16_t(??0 * buffer)" `1794  "* Return first character from buffer and remove it from buffer"
+C L "fifoBufAvailable" 6 327 1 "*"
+C L "fifoBufAvailable" 6 327 1 "*"
+C L "fifoBufAvailable" 6 327 1 "*"
+F N "fifoBufPop" 6 333 ""
+V L "buffer" 6 333 "??0 *" `1797 
+f G "fifoBufPop" 6 333 "int8(??0 * buffer)" `1796  "* Push character into fifo buffer. If there is no space left, character is"
+C L "fifoBufPop" 6 335 1 "*"
+C L "fifoBufPop" 6 335 1 "*"
+C L "fifoBufPop" 6 335 1 "*"
+C L "fifoBufPop" 6 335 1 "*"
+F N "fifoBufPush" 6 342 ""
+V L "buffer" 6 342 "??0 *" `1799 
+V L "a" 6 342 "int8" `1800 
+f G "fifoBufPush" 6 342 "int8(??0 * buffer,int8 a)" `1798  "* Copy provided string to the history buffer."
+C L "fifoBufPush" 6 344 1 "*"
+C L "fifoBufPush" 6 344 1 "*"
+C L "fifoBufPush" 6 344 1 "*"
+C L "fifoBufPush" 6 344 1 "*"
+C L "fifoBufPush" 6 344 1 "*"
+C L "fifoBufPush" 6 344 1 "*"
+C L "fifoBufPush" 6 344 1 "*"
+F N "historyPut" 6 354 ""
+V L "history" 6 354 "??0 *" `1802 
+V L "str" 6 354 "*int8" `1803 
+f G "historyPut" 6 354 "int8(??0 * history,*int8 str)" `1801  "* Get item from history. Items are counted from 1 so if item is 0 or greater"
+C L "historyPut" 6 356 1 "*"
+C L "historyPut" 6 356 1 "*"
+C L "historyPut" 6 356 1 "*"
+C L "historyPut" 6 356 1 "*"
+F N "historyGet" 6 363 ""
+V L "history" 6 363 "??0 *" `1805 
+V L "item" 6 363 "uint16_t" `1806 
+f G "historyGet" 6 363 "*int8(??0 * history,uint16_t item)" `1804  "* Remove specific item from history"
+C L "historyGet" 6 365 1 "*"
+C L "historyGet" 6 365 1 "*"
+C L "historyGet" 6 365 1 "*"
+F N "historyRemove" 6 371 ""
+V L "history" 6 371 "??0 *" `1808 
+V L "str" 6 371 "*int8" `1809 
+f G "historyRemove" 6 371 "void(??0 * history,*int8 str)" `1807  "* Return position (index of first char) of specified token"
+C L "historyRemove" 6 373 1 "*"
+C L "historyRemove" 6 373 1 "*"
+C L "historyRemove" 6 373 1 "*"
+C L "historyRemove" 6 373 1 "*"
+F N "getTokenPosition" 6 380 ""
+V L "tokenizedStr" 6 380 "*int8" `1811 
+V L "pos" 6 380 "uint16_t" `1812 
+f G "getTokenPosition" 6 380 "uint16_t(*int8 tokenizedStr,uint16_t pos)" `1810 
+F N "embeddedCliDefaultConfig" 6 382 ""
+F G "embeddedCliDefaultConfig" 6 382 "??0 *()" `1406 
+F N "embeddedCliRequiredSize" 6 394 ""
+V L "config" 6 394 "??0 *" `1814 
+F G "embeddedCliRequiredSize" 6 394 "uint16_t(??0 * config)" `1407 
+V L "bindingCount" 6 395 "uint16_t" `1813 
+F N "cliInternalBindingCount" 6 395 ""
+F N "config" 6 399 ""
+F N "rxBufferSize" 6 399 ""
 F N "config" 6 400 ""
-F N "rxBufferSize" 6 400 ""
-F N "config" 6 401 ""
-F N "cmdBufferSize" 6 401 ""
+F N "cmdBufferSize" 6 400 ""
 F B "reset_cpu" 0 0
 F B "abs" 1 0
 F B "sleep" 0 1
