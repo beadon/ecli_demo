@@ -1,4 +1,4 @@
-#include "main.h"
+#include <main.h>
 #define EMBEDDED_CLI_IMPL
 #include "embedded_cli.h"
 
