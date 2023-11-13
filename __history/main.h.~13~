@@ -6,11 +6,12 @@
 #device ICD=TRUE
 #use delay(internal=64MHz)
 
+
 // Supposed to be provided by stdint.h, hardware specific
 // required for eCLI.
 
 #ifndef UINTPTR_MAX
-#define UINTPTR_MAX 0xFF
+#define UINTPTR_MAX 0xFFFF
 #endif
 
 #include "embedded_cli.h"

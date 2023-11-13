@@ -14,14 +14,12 @@ extern "C" {
 #include <stdint.h>
 
 // used for proper alignment of cli buffer
-#if UINTPTR_MAX == 0xFF
-#define CLI_UINT uint8_t
-#elif UINTPTR_MAX == 0xFFFF
+#if UINTPTR_MAX == 0xFFFF
 #define CLI_UINT uint16_t
 #elif UINTPTR_MAX == 0xFFFFFFFF
 #define CLI_UINT uint32_t
-//#elif UINTPTR_MAX == 0xFFFFFFFFFFFFFFFFu
-//#define CLI_UINT uint64_t
+#elif UINTPTR_MAX == 0xFFFFFFFFFFFFFFFFu
+#define CLI_UINT uint64_t
 #else
 #error unsupported pointer size
 #endif

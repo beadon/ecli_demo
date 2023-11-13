@@ -89,7 +89,7 @@ t3=1
 4=..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlib.h
 t4=1
 5=embedded_cli.c
-t5=405
+t5=393
 [main.c]
 Type=4
 Path=
