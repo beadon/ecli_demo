@@ -38,7 +38,7 @@ typedef struct CliCommandBinding CliCommandBinding;
 typedef struct EmbeddedCli EmbeddedCli;
 typedef struct EmbeddedCliConfig EmbeddedCliConfig;
 
-struct CliCommand {
+typedef struct CliCommand {
     /**
      * Name of the command.
      * In command "set led 1 1" "set" is name
@@ -52,9 +52,9 @@ struct CliCommand {
      * Use tokenize functions to easily get individual tokens
      */
     char *args;
-};
+} CliCommand;
 
-struct EmbeddedCli {
+typedef struct EmbeddedCli {
     /**
      * Should write char to connection
      * @param cli - pointer to cli that executed this function
@@ -79,12 +79,12 @@ struct EmbeddedCli {
      * Pointer to actual implementation, do not use.
      */
     void *_impl;
-};
+} EmbeddedCli;
 
 /**
  * Struct to describe binding of command to function and
  */
-struct CliCommandBinding {
+typedef struct CliCommandBinding {
     /**
      * Name of command to bind. Should not be NULL.
      */
@@ -116,12 +116,14 @@ struct CliCommandBinding {
      * @param context
      */
     void (*binding)(EmbeddedCli *cli, char *args, void *context);
-};
+} CliCommandBinding;
+
+
 
 /**
  * Configuration to create CLI
  */
-struct EmbeddedCliConfig {
+typedef struct EmbeddedCliConfig {
     /**
      * Invitation string. Is printed at the beginning of each line with user
      * input
@@ -171,7 +173,7 @@ struct EmbeddedCliConfig {
      * complete current command manually.
      */
     bool enableAutoComplete;
-};
+} EmbeddedCliConfig;
 
 /**
  * Returns pointer to default configuration for cli creation. It is safe to

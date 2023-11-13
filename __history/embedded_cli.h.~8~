@@ -33,12 +33,12 @@ extern "C" {
 
 // Compiler does not properly handle the structs
 // unless typedef is next to the definition
-typedef struct CliCommand CliCommand;
-typedef struct CliCommandBinding CliCommandBinding;
-typedef struct EmbeddedCli EmbeddedCli;
-typedef struct EmbeddedCliConfig EmbeddedCliConfig;
+//typedef struct CliCommand CliCommand;
+//typedef struct CliCommandBinding CliCommandBinding;
+//typedef struct EmbeddedCli EmbeddedCli;
+//typedef struct EmbeddedCliConfig EmbeddedCliConfig;
 
-struct CliCommand {
+typedef struct CliCommand {
     /**
      * Name of the command.
      * In command "set led 1 1" "set" is name
@@ -52,39 +52,12 @@ struct CliCommand {
      * Use tokenize functions to easily get individual tokens
      */
     char *args;
-};
-
-struct EmbeddedCli {
-    /**
-     * Should write char to connection
-     * @param cli - pointer to cli that executed this function
-     * @param c   - actual character to write
-     */
-    void (*writeChar)(EmbeddedCli *cli, char c);
-
-    /**
-     * Called when command is received and command not found in list of
-     * command bindings (or binding function is null).
-     * @param cli     - pointer to cli that executed this function
-     * @param command - pointer to received command
-     */
-    void (*onCommand)(EmbeddedCli *cli, CliCommand *command);
-
-    /**
-     * Can be used for any application context
-     */
-    void *appContext;
-
-    /**
-     * Pointer to actual implementation, do not use.
-     */
-    void *_impl;
-};
+} CliCommand;
 
 /**
  * Struct to describe binding of command to function and
  */
-struct CliCommandBinding {
+typedef struct CliCommandBinding {
     /**
      * Name of command to bind. Should not be NULL.
      */
@@ -116,12 +89,39 @@ struct CliCommandBinding {
      * @param context
      */
     void (*binding)(EmbeddedCli *cli, char *args, void *context);
-};
+} CliCommandBinding;
+
+typedef struct EmbeddedCli {
+    /**
+     * Should write char to connection
+     * @param cli - pointer to cli that executed this function
+     * @param c   - actual character to write
+     */
+    void (*writeChar)(EmbeddedCli *cli, char c);
+
+    /**
+     * Called when command is received and command not found in list of
+     * command bindings (or binding function is null).
+     * @param cli     - pointer to cli that executed this function
+     * @param command - pointer to received command
+     */
+    void (*onCommand)(EmbeddedCli *cli, CliCommand *command);
+
+    /**
+     * Can be used for any application context
+     */
+    void *appContext;
+
+    /**
+     * Pointer to actual implementation, do not use.
+     */
+    void *_impl;
+} EmbeddedCli;
 
 /**
  * Configuration to create CLI
  */
-struct EmbeddedCliConfig {
+typedef struct EmbeddedCliConfig {
     /**
      * Invitation string. Is printed at the beginning of each line with user
      * input
@@ -171,7 +171,7 @@ struct EmbeddedCliConfig {
      * complete current command manually.
      */
     bool enableAutoComplete;
-};
+} EmbeddedCliConfig;
 
 /**
  * Returns pointer to default configuration for cli creation. It is safe to

@@ -121,7 +121,7 @@ struct CliCommandBinding {
 /**
  * Configuration to create CLI
  */
-struct EmbeddedCliConfig {
+typedef struct EmbeddedCliConfig {
     /**
      * Invitation string. Is printed at the beginning of each line with user
      * input

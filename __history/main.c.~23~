@@ -1,10 +1,9 @@
 #include "main.h"
-
 #define EMBEDDED_CLI_IMPL
 #include "embedded_cli.h"
 
 // compiler won't find the .c unless added here
-#include "embedded_cli.c"
+// #include "embedded_cli.c"
 
 EmbeddedCli *cli = embeddedCliNewDefault();
 
@@ -14,7 +13,7 @@ void main()
 
    EmbeddedCliConfig *config = embeddedCliDefaultConfig();
    config->maxBindingCount = 16;
-   void writeChar(EmbeddedCli *embeddedCli, char c);
+   void write_char(EmbeddedCli *embeddedCli, char c);
   
    while(TRUE)
    {
@@ -24,7 +23,7 @@ void main()
 
 }
 
-void writeChar(EmbeddedCli *embeddedCli, char c)
+void write_char(EmbeddedCli *embeddedCli, char c)
 {
   // Hello !
 

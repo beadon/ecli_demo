@@ -84,7 +84,7 @@ struct EmbeddedCli {
 /**
  * Struct to describe binding of command to function and
  */
-struct CliCommandBinding {
+typedef struct CliCommandBinding {
     /**
      * Name of command to bind. Should not be NULL.
      */
@@ -116,12 +116,14 @@ struct CliCommandBinding {
      * @param context
      */
     void (*binding)(EmbeddedCli *cli, char *args, void *context);
-};
+} CliCommandBinding;
+
+
 
 /**
  * Configuration to create CLI
  */
-struct EmbeddedCliConfig {
+typedef struct EmbeddedCliConfig {
     /**
      * Invitation string. Is printed at the beginning of each line with user
      * input
@@ -171,7 +173,7 @@ struct EmbeddedCliConfig {
      * complete current command manually.
      */
     bool enableAutoComplete;
-};
+} EmbeddedCliConfig;
 
 /**
  * Returns pointer to default configuration for cli creation. It is safe to

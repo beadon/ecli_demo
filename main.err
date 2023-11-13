@@ -1,48 +1,101 @@
-Compiling C:\Users\beadon\Documents\GitHub\ecli_demo\main on 13-Nov-23 at 14:11
-*** Error 32 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 91(21,32): Expecting a , or )
-*** Error 48 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 91(34,37): Expecting a (
-*** Error 28 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 91(51,55): Expecting an identifier
-*** Error 48 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 91(57,64): Expecting a (
-*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 92(1,2): Expecting a declaration
-*** Error 48 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 92(3,20): Expecting a (
-*** Error 32 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 100(23,34): Expecting a , or )
-*** Error 48 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 100(36,39): Expecting a (
-*** Error 36 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 100(46,47): Expecting a ; or ,
-*** Error 32 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 108(23,34): Expecting a , or )
-*** Error 48 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 108(36,39): Expecting a (
-*** Error 36 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 108(53,60): Expecting a ; or ,
-*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 119(1,2): Expecting a declaration
-*** Error 48 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 119(3,14): Expecting a (
-*** Error 48 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 212(1,12): Expecting a (
-*** Error 48 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 218(1,12): Expecting a (
-*** Error 32 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 229(29,40): Expecting a , or )
-*** Error 48 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 229(42,45): Expecting a (
---- Info 300 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 100(46,47): More info:   First Declaration of c
-*** Error 31 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 229(52,53): Identifier is already used in this scope
-*** Error 32 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 235(25,36): Expecting a , or )
-*** Error 48 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 235(38,41): Expecting a (
-*** Error 32 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 244(28,39): Expecting a , or )
-*** Error 48 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 244(41,44): Expecting a (
-*** Error 48 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 244(46,63): Expecting a (
-*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 244(71,72): Expecting a declaration
-*** Error 32 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 254(23,34): Expecting a , or )
-*** Error 48 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 254(36,39): Expecting a (
-*** Error 36 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 254(47,53): Expecting a ; or ,
-*** Error 32 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 260(22,33): Expecting a , or )
-*** Error 48 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 260(35,38): Expecting a (
-*** Error 32 "C:\Users\beadon\Documents\GitHub\ecli_demo\main.h" Line 20(17,28): Expecting a , or )
-*** Error 48 "C:\Users\beadon\Documents\GitHub\ecli_demo\main.h" Line 20(30,41): Expecting a (
---- Info 300 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 100(46,47): More info:   First Declaration of c
-*** Error 31 "C:\Users\beadon\Documents\GitHub\ecli_demo\main.h" Line 20(48,49): Identifier is already used in this scope
-*** Error 48 "C:\Users\beadon\Documents\GitHub\ecli_demo\main.c" Line 8(1,12): Expecting a (
-*** Error 48 "C:\Users\beadon\Documents\GitHub\ecli_demo\main.c" Line 8(14,17): Expecting a (
-*** Error 12 "C:\Users\beadon\Documents\GitHub\ecli_demo\main.c" Line 19(26,29): Undefined identifier   cli
-*** Error 32 "C:\Users\beadon\Documents\GitHub\ecli_demo\main.c" Line 26(12,23): Expecting a , or )
-*** Error 48 "C:\Users\beadon\Documents\GitHub\ecli_demo\main.c" Line 26(25,28): Expecting a (
---- Info 300 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.h" Line 91(45,49): More info:   First Declaration of args
-*** Error 31 "C:\Users\beadon\Documents\GitHub\ecli_demo\main.c" Line 26(36,40): Identifier is already used in this scope
-*** Error 36 "C:\Users\beadon\Documents\GitHub\ecli_demo\main.c" Line 26(48,55): Expecting a ; or ,
-*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\main.c" Line 27(1,2): Expecting a declaration
-*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\main.c" Line 35(1,2): Expecting a declaration
-      42 Errors,  0 Warnings.
-Build Failed.
+Compiling C:\Users\beadon\Documents\GitHub\ecli_demo\main on 13-Nov-23 at 14:33
+*** Error 56 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 384(19,31): Element is not a member
+*** Error 56 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 385(19,32): Element is not a member
+*** Error 56 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 386(19,36): Element is not a member
+*** Error 56 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 387(19,28): Element is not a member
+*** Error 56 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 388(19,32): Element is not a member
+*** Error 56 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 389(19,34): Element is not a member
+*** Error 56 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 390(19,37): Element is not a member
+*** Error 56 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 391(19,29): Element is not a member
+*** Error 56 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 396(49,64): Element is not a member
+*** Error 48 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 396(67,90): Expecting a (
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 397(5,11): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 397(12,13): Expecting a declaration
+*** Error 28 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 397(21,22): Expecting an identifier
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 397(37,38): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 397(37,38): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 397(37,38): Expecting a declaration
+*** Error 28 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 397(37,38): Expecting an identifier
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 397(38,39): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 397(40,41): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 398(52,53): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 398(52,53): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 398(52,53): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 398(52,53): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 398(52,53): Expecting a declaration
+*** Error 28 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 398(52,53): Expecting an identifier
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 398(52,53): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 398(52,53): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 398(52,53): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 398(52,53): Expecting a declaration
+*** Error 28 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 398(52,53): Expecting an identifier
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 398(52,53): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 398(52,53): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 398(52,53): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 398(52,53): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 398(52,53): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 398(52,53): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 398(52,53): Expecting a declaration
+*** Error 28 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 398(52,53): Expecting an identifier
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 398(52,53): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 398(53,54): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 399(56,57): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 399(56,57): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 399(56,57): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 399(56,57): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 399(56,57): Expecting a declaration
+*** Error 28 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 399(56,57): Expecting an identifier
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 399(56,57): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 399(56,57): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 399(56,57): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 399(56,57): Expecting a declaration
+*** Error 28 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 399(56,57): Expecting an identifier
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 399(56,57): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 399(56,57): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 399(56,57): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 399(56,57): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 399(56,57): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 399(56,57): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 399(56,57): Expecting a declaration
+*** Error 28 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 399(56,57): Expecting an identifier
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 399(56,57): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 399(57,58): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 400(68,69): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 400(68,69): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 400(68,69): Expecting a declaration
+*** Error 48 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 400(68,69): Expecting a (
+*** Error 48 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 400(68,69): Expecting a (
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 400(68,69): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 400(68,69): Expecting a declaration
+*** Error 28 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 400(68,69): Expecting an identifier
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 400(68,69): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 400(68,69): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 400(68,69): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 400(68,69): Expecting a declaration
+*** Error 28 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 400(68,69): Expecting an identifier
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 400(68,69): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 400(68,69): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 400(68,69): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 400(68,69): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 400(68,69): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 400(68,69): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 400(68,69): Expecting a declaration
+*** Error 28 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 400(68,69): Expecting an identifier
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 400(68,69): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 400(69,70): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 401(69,70): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 401(69,70): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 401(69,70): Expecting a declaration
+*** Error 48 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 401(69,70): Expecting a (
+*** Error 48 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 401(69,70): Expecting a (
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 401(69,70): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 401(69,70): Expecting a declaration
+*** Error 28 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 401(69,70): Expecting an identifier
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 401(69,70): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 401(69,70): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 401(69,70): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 401(69,70): Expecting a declaration
+*** Error 28 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 401(69,70): Expecting an identifier
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 401(69,70): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 401(69,70): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\ecli_demo\embedded_cli.c" Line 401(69,70): Expecting a declaration

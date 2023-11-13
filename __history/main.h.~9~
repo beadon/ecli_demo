@@ -14,7 +14,7 @@
 #define UINTPTR_MAX 0xFFFF
 #endif
 
-#include "embedded_cli.h"
+//#include "embedded_cli.h"
 
 // eCLI Requirement
 void writeChar(EmbeddedCli *embeddedCli, char c);
