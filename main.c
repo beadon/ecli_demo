@@ -1,0 +1,15 @@
+#include <main.h>
+#define EMBEDDED_CLI_IMPL
+#include "embedded_cli.h"
+
+void main()
+{
+
+   while(TRUE)
+   {
+      
+
+      //TODO: User Code
+   }
+
+}

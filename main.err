@@ -1,0 +1,103 @@
+Compiling C:\Users\beadon\Documents\GitHub\embedded-cli-mods\main on 13-Nov-23 at 13:23
+*** Error 56 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 735(19,31): Element is not a member
+*** Error 56 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 736(19,32): Element is not a member
+*** Error 56 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 737(19,36): Element is not a member
+*** Error 56 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 738(19,28): Element is not a member
+*** Error 56 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 739(19,32): Element is not a member
+*** Error 56 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 740(19,34): Element is not a member
+*** Error 56 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 741(19,37): Element is not a member
+*** Error 56 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 742(19,29): Element is not a member
+*** Error 56 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 747(49,64): Element is not a member
+*** Error 48 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 747(67,90): Expecting a (
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 748(5,11): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 748(12,13): Expecting a declaration
+*** Error 28 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 748(21,22): Expecting an identifier
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 748(37,38): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 748(37,38): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 748(37,38): Expecting a declaration
+*** Error 28 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 748(37,38): Expecting an identifier
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 748(38,39): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 748(40,41): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 749(52,53): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 749(52,53): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 749(52,53): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 749(52,53): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 749(52,53): Expecting a declaration
+*** Error 28 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 749(52,53): Expecting an identifier
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 749(52,53): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 749(52,53): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 749(52,53): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 749(52,53): Expecting a declaration
+*** Error 28 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 749(52,53): Expecting an identifier
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 749(52,53): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 749(52,53): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 749(52,53): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 749(52,53): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 749(52,53): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 749(52,53): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 749(52,53): Expecting a declaration
+*** Error 28 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 749(52,53): Expecting an identifier
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 749(52,53): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 749(53,54): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 750(56,57): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 750(56,57): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 750(56,57): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 750(56,57): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 750(56,57): Expecting a declaration
+*** Error 28 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 750(56,57): Expecting an identifier
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 750(56,57): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 750(56,57): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 750(56,57): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 750(56,57): Expecting a declaration
+*** Error 28 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 750(56,57): Expecting an identifier
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 750(56,57): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 750(56,57): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 750(56,57): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 750(56,57): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 750(56,57): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 750(56,57): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 750(56,57): Expecting a declaration
+*** Error 28 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 750(56,57): Expecting an identifier
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 750(56,57): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 750(57,58): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 751(68,69): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 751(68,69): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 751(68,69): Expecting a declaration
+*** Error 48 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 751(68,69): Expecting a (
+*** Error 48 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 751(68,69): Expecting a (
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 751(68,69): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 751(68,69): Expecting a declaration
+*** Error 28 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 751(68,69): Expecting an identifier
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 751(68,69): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 751(68,69): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 751(68,69): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 751(68,69): Expecting a declaration
+*** Error 28 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 751(68,69): Expecting an identifier
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 751(68,69): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 751(68,69): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 751(68,69): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 751(68,69): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 751(68,69): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 751(68,69): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 751(68,69): Expecting a declaration
+*** Error 28 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 751(68,69): Expecting an identifier
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 751(68,69): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 751(69,70): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 752(69,70): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 752(69,70): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 752(69,70): Expecting a declaration
+*** Error 48 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 752(69,70): Expecting a (
+*** Error 48 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 752(69,70): Expecting a (
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 752(69,70): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 752(69,70): Expecting a declaration
+*** Error 28 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 752(69,70): Expecting an identifier
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 752(69,70): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 752(69,70): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 752(69,70): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 752(69,70): Expecting a declaration
+*** Error 28 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 752(69,70): Expecting an identifier
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 752(69,70): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 752(69,70): Expecting a declaration
+*** Error 43 "C:\Users\beadon\Documents\GitHub\embedded-cli-mods\embedded_cli.h" Line 752(69,70): Expecting a declaration
+      100 Errors,  0 Warnings.
+Build Failed.

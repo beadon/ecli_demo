@@ -1,0 +1,98 @@
+CCS PCH C Compiler, Version 5.116, 749               13-Nov-23 13:06
+
+               Filename:   C:\Users\beadon\Documents\GitHub\embedded-cli-mods\main.lst
+
+               ROM used:   62 bytes (0%)
+                           Largest free fragment is 65536
+               RAM used:   4 (0%) at main() level
+                           4 (0%) worst case
+               Stack used: 0 locations
+               Stack size: 126
+
+*
+00000:  GOTO   0004
+.................... #include <main.h>
+.................... #include <18F57Q84.h>
+.................... //////////// Standard Header file for the PIC18F57Q84 device ////////////////
+.................... ///////////////////////////////////////////////////////////////////////////
+.................... ////        (C) Copyright 1996, 2020 Custom Computer Services          ////
+.................... //// This source code may only be used by licensed users of the CCS C  ////
+.................... //// compiler.  This source code may only be distributed to other      ////
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction ////
+.................... //// or distribution is permitted without written permission.          ////
+.................... //// Derivative programs created using this software in object code    ////
+.................... //// form are not restricted in any way.                               ////
+.................... ///////////////////////////////////////////////////////////////////////////
+.................... #device PIC18F57Q84
+.................... 
+.................... #list
+.................... 
+.................... #device ADC=12
+.................... 
+.................... #FUSES NOWDT                 	//No Watch Dog Timer
+.................... 
+.................... #device ICD=TRUE
+.................... #use delay(internal=64MHz)
+.................... 
+.................... 
+.................... 
+.................... void main()
+00004:  CLRF   4F8
+00006:  BCF    4D6.5
+00008:  CLRF   xB0
+0000A:  CLRF   xAF
+0000C:  CLRF   xB3
+0000E:  MOVLW  08
+00010:  MOVWF  xB1
+00012:  MOVLW  60
+00014:  MOVWF  xAD
+00016:  MOVLB  4
+00018:  CLRF   x00
+0001A:  CLRF   x08
+0001C:  CLRF   x10
+0001E:  CLRF   x18
+00020:  CLRF   x20
+00022:  CLRF   x28
+00024:  MOVLB  0
+00026:  CLRF   x71
+00028:  CLRF   x72
+0002A:  CLRF   x73
+0002C:  CLRF   x70
+0002E:  CLRF   x75
+00030:  CLRF   x76
+00032:  CLRF   x77
+00034:  CLRF   x74
+.................... {
+.................... 
+....................    while(TRUE)
+....................    {
+00036:  GOTO   0036
+....................       
+.................... 
+....................       //TODO: User Code
+....................    }
+.................... 
+.................... }
+0003A:  GOTO   003A
+
+Configuration Fuses:
+   Word  1: EF8C   NOEXTOSC RSTOSC_HFINTRC_64MHZ NOCLKOUT PRLOCK1WAY CKS NOJTAG FCMEN PFCMEN SFCMEN
+   Word  2: DFF7   MCLR NOPUT NOMVECEN IVT1WAY NOLPBOR BROWNOUT BORV19 ZCDDIS PPS1WAY STVREN NOLVP NOXINST
+   Word  3: FF9F   WDTSW NOWDT WDTWIN_SW WDTCLK_SW
+   Word  4: FFDF   BBSIZ512 NOBOOTBLOCK NOSAF DEBUG NOWRTB NOWRTC NOWRTD NOWRTSAF NOWRT
+   Word  5: FFFF   CRCBOOTPINC5 NOCRCBOOTPIN CRCBOOTPIN_DRIVEN NOPROTECT
+   Word  6: FFFF   NOCRCSCANBB CRCBBSCANERR_STOP NOCRCSCANAPP NOCRCSCANSAF NOCRCSCANEE NOCRCSCANCONFIG NOCRCBOOTSCAN
+   Word  7: FFFF  
+   Word  8: FFFF  
+   Word  9: FFFF  
+   Word 10: FFFF  
+   Word 11: FFFF  
+   Word 12: FFFF  
+   Word 13: FFFF  
+   Word 14: FFFF  
+   Word 15: FFFF  
+   Word 16: FFFF  
+   Word 17: FFFF  
+   Word 18: FFFF  
+
+   Some fuses have been forced to be compatible with the ICD debugger.
