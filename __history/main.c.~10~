@@ -22,8 +22,8 @@ void onLed(EmbeddedCli *cli, char *args, void *context)
    // use args as raw null-terminated string of all arguments
   
    // Use if args should be tokenized
-//   cnst char * arg = embeddedCliGetToken(args, pos); // args are counted from 1 (not from 0)
-// uint8_t pos = embeddedCliFindToken(args, argument);
-// uint8_t count = embeddedCliGetTokenCount(const char *tokenizedStr);
+//   const char * arg = embeddedCliGetToken(args, pos); // args are counted from 1 (not from 0)
+//   uint8_t pos = embeddedCliFindToken(args, argument);
+//   uint8_t count = embeddedCliGetTokenCount(const char *tokenizedStr);
 
 }

@@ -1,4 +1,4 @@
-Compiling C:\Users\beadon\Documents\GitHub\ecli_demo\main on 13-Nov-23 at 13:47
-      Memory usage:   ROM=0%      RAM=0% - 0%
-      0 Errors,  0 Warnings.
-Build Successful.
+Compiling C:\Users\beadon\Documents\GitHub\ecli_demo\main on 13-Nov-23 at 13:58
+*** Error 112 "C:\Users\beadon\Documents\GitHub\ecli_demo\main.c" Line 8(1,1): Function used but not defined:  ... embeddedCliNewDefault 2554  SCR=3956
+      1 Errors,  0 Warnings.
+Build Failed.

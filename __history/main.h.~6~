@@ -18,4 +18,4 @@
 
 // eCLI Requirement
 void write_char(EmbeddedCli *embeddedCli, char c);
-void ecli_setup();
+void ecli_setup(thing *STBoard);

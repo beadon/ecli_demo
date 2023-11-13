@@ -1,9 +1,9 @@
-D G "__PCH__" 0 17 ""5.116""
-D G "__DEVICE__" 0 17 "5784"
-D G "__DATE__" 0 17 ""13-Nov-23""
-D G "__TIME__" 0 17 ""13:47:25""
-D G "_UNICODE" 0 17 ""?""
-D G "__EVAL" 0 17 ""?"" "Standard Header file for the PIC18F57Q84 device ////////////////"
+D G "__PCH__" 0 0 ""5.116""
+D G "__DEVICE__" 0 0 ""
+D G "__DATE__" 0 0 ""13-Nov-23""
+D G "__TIME__" 0 0 ""13:58:49""
+D G "_UNICODE" 0 0 ""?""
+D G "__EVAL" 0 0 ""?"" "Standard Header file for the PIC18F57Q84 device ////////////////"
 c L "set_tris_a" 2 3 32 "FUNCTION"
 F N "set_tris_a" 2 86 ""
 V L "value" 2 86 "int8" `55 
@@ -278,7 +278,7 @@ F B "set_timer0" 2 258 "void(int16 value)" `175
 F N "get_timer0" 2 259 ""
 F B "get_timer0" 2 259 "int8()" `177 
 F N "get_timer0" 2 260 ""
-f G "get_timer0" 2 260 "int16(int8 mode,int8 prescaler)" `178 
+f G "get_timer0" 2 260 "int16()" `178 
 F N "setup_counters" 2 261 ""
 V L "mode" 2 261 "int8" `179 
 V L "prescaler" 2 261 "int8" `180 
@@ -292,7 +292,7 @@ F B "set_rtcc" 2 263 "void(int16 value)" `183
 F N "get_rtcc" 2 264 ""
 F B "get_rtcc" 2 264 "int8()" `185 
 F N "get_rtcc" 2 265 ""
-f G "get_rtcc" 2 265 "int16(int16 mode)" `186  "Constants used for SETUP_TIMER_0() first parameter are:"
+f G "get_rtcc" 2 265 "int16()" `186  "Constants used for SETUP_TIMER_0() first parameter are:"
 D G "T0_INTERNAL" 2 267 "0x8040"
 D G "T0_HFINTOSC" 2 268 "0x8060"
 D G "T0_LFINTOSC" 2 269 "0x8080"
@@ -2590,15 +2590,15 @@ F N "read_adc" 2 2321 ""
 f G "read_adc" 2 2321 "int16()" `810 
 F N "read_adc" 2 2322 ""
 V L "mode" 2 2322 "int8" `811 
-f G "read_adc" 2 2322 "int16(int8 mode,int8 which)" `810 
+f G "read_adc" 2 2322 "int16(int8 mode)" `810 
 F N "adc_done" 2 2323 ""
-F B "adc_done" 2 2323 "int8(int8 mode,int8 which)" `810 
+F B "adc_done" 2 2323 "int8(int8 mode)" `810 
 F N "adc_read" 2 2324 ""
 V L "which" 2 2324 "int8" `812 
 F B "adc_read" 2 2324 "int8(int8 which)" `811 
 F N "adc_read" 2 2325 ""
 V L "which" 2 2325 "int8" `814 
-f G "adc_read" 2 2325 "int16(int8 which,int8 value)" `813 
+f G "adc_read" 2 2325 "int16(int8 which)" `813 
 F N "adc_write" 2 2326 ""
 V L "which" 2 2326 "int8" `814 
 V L "value" 2 2326 "int8" `815 
@@ -3180,9 +3180,9 @@ F B "i2c_transfer_in" 2 2664 "int8(int8 stream,int8 address,*int8 rData,int8 rCo
 F N "spi_xfer" 2 2667 ""
 F B "spi_xfer" 2 2667 "int8()" `1125 
 F N "spi_xfer" 2 2668 ""
-f G "spi_xfer" 2 2668 "int16(int8 data)" `1126 
+f G "spi_xfer" 2 2668 "int16()" `1126 
 F N "spi_xfer" 2 2669 ""
-f G "spi_xfer" 2 2669 "int32(int8 data)" `1126 
+f G "spi_xfer" 2 2669 "int32()" `1126 
 F N "spi_xfer" 2 2670 ""
 V L "data" 2 2670 "int8" `1127 
 F B "spi_xfer" 2 2670 "int8(int8 data)" `1126 
@@ -3262,18 +3262,18 @@ F B "spi_prewrite" 2 2689 "void(int8 ,int32 data)" `1179
 F N "spi_xfer_in" 2 2690 ""
 F B "spi_xfer_in" 2 2690 "int8()" `1182 
 F N "spi_xfer_in" 2 2691 ""
-f G "spi_xfer_in" 2 2691 "int16(int8 bits)" `1183 
+f G "spi_xfer_in" 2 2691 "int16()" `1183 
 F N "spi_xfer_in" 2 2692 ""
-f G "spi_xfer_in" 2 2692 "int32(int8 bits)" `1183 
+f G "spi_xfer_in" 2 2692 "int32()" `1183 
 F N "spi_xfer_in" 2 2693 ""
 V L "bits" 2 2693 "int8" `1184 
 F B "spi_xfer_in" 2 2693 "int8(int8 bits)" `1183 
 F N "spi_xfer_in" 2 2694 ""
 V L "bits" 2 2694 "int8" `1186 
-f G "spi_xfer_in" 2 2694 "int16(int8 bits,int8 bits)" `1185 
+f G "spi_xfer_in" 2 2694 "int16(int8 bits)" `1185 
 F N "spi_xfer_in" 2 2695 ""
 V L "bits" 2 2695 "int8" `1186 
-f G "spi_xfer_in" 2 2695 "int32(int8 bits,int8 bits)" `1185 
+f G "spi_xfer_in" 2 2695 "int32(int8 bits)" `1185 
 F N "spi_xfer_in" 2 2696 ""
 V L "stream" 2 2696 "int8" `1186 
 V L "bits" 2 2696 "int8" `1187 
@@ -3281,11 +3281,11 @@ F B "spi_xfer_in" 2 2696 "int8(int8 stream,int8 bits)" `1185
 F N "spi_xfer_in" 2 2697 ""
 V L "stream" 2 2697 "int8" `1186 
 V L "bits" 2 2697 "int8" `1190 
-f G "spi_xfer_in" 2 2697 "int16(int8 stream,int8 bits,int16 count)" `1188 
+f G "spi_xfer_in" 2 2697 "int16(int8 stream,int8 bits)" `1188 
 F N "spi_xfer_in" 2 2698 ""
 V L "stream" 2 2698 "int8" `1186 
 V L "bits" 2 2698 "int8" `1190 
-f G "spi_xfer_in" 2 2698 "int32(int8 stream,int8 bits,int16 count)" `1188 
+f G "spi_xfer_in" 2 2698 "int32(int8 stream,int8 bits)" `1188 
 F N "spi_transfer" 2 2699 ""
 V L "wData" 2 2699 "*int8" `1189 
 V L "rData" 2 2699 "*int8" `1190 
@@ -3364,9 +3364,9 @@ F B "rtos_stats" 2 2723 "void(int8 task,*int8 stat)" `1237  "#use timer() Protot
 F N "get_ticks" 2 2726 ""
 F B "get_ticks" 2 2726 "int8()" `1240 
 F N "get_ticks" 2 2727 ""
-f G "get_ticks" 2 2727 "int16(int8 stream)" `1241 
+f G "get_ticks" 2 2727 "int16()" `1241 
 F N "get_ticks" 2 2728 ""
-f G "get_ticks" 2 2728 "int32(int8 stream)" `1241 
+f G "get_ticks" 2 2728 "int32()" `1241 
 F N "get_ticks" 2 2729 ""
 V L "stream" 2 2729 "int8" `1242 
 F B "get_ticks" 2 2729 "int8(int8 stream)" `1241 
@@ -3766,7 +3766,6 @@ D G "INT_DMA8DCNT" 2 3060 "0x000F20"
 D G "INT_DMA8OR" 2 3061 "0x000F40"
 D G "INT_DMA8A" 2 3062 "0x000F80"
 D G "UINTPTR_MAX" 1 14 "0xFFFF"
-D G "EMBEDDED_CLI_IMPL" 0 2 ""
 D G "EMBEDDED_CLI_H" 3 2 ""
 D G "__STDBOOL_H__" 4 18 ""
 C L "jump_to_isr" 4 2 2 "FUNCTION"
@@ -3922,7 +3921,7 @@ C L "*onCommand" 3 175 1 "*"
 C L "*onCommand" 3 175 1 "*"
 C L "*onCommand" 3 175 1 "*"
 F N "embeddedCliDefaultConfig" 3 192 ""
-f G "embeddedCliDefaultConfig" 3 192 "??0 *(??0 * config)" `1406  "* Returns how many space in config buffer is required for cli creation"
+f G "embeddedCliDefaultConfig" 3 192 "??0 *()" `1406  "* Returns how many space in config buffer is required for cli creation"
 C L "embeddedCliDefaultConfig" 3 194 1 "*"
 C L "embeddedCliDefaultConfig" 3 194 1 "*"
 C L "embeddedCliDefaultConfig" 3 194 1 "*"
@@ -3930,7 +3929,7 @@ C L "embeddedCliDefaultConfig" 3 194 1 "*"
 C L "embeddedCliDefaultConfig" 3 194 1 "*"
 F N "embeddedCliRequiredSize" 3 202 ""
 V L "config" 3 202 "??0 *" `1408 
-f G "embeddedCliRequiredSize" 3 202 "uint16_t(??0 * config,??0 * config)" `1407  "* Create new CLI."
+f G "embeddedCliRequiredSize" 3 202 "uint16_t(??0 * config)" `1407  "* Create new CLI."
 C L "embeddedCliRequiredSize" 3 204 1 "*"
 C L "embeddedCliRequiredSize" 3 204 1 "*"
 C L "embeddedCliRequiredSize" 3 204 1 "*"
@@ -3940,7 +3939,7 @@ V L "config" 3 211 "??0 *" `1410
 f G "embeddedCliNew" 3 211 "??0 *(??0 * config)" `1409  "* Same as calling embeddedCliNew with default config."
 C L "embeddedCliNew" 3 213 1 "*"
 F N "embeddedCliNewDefault" 3 217 ""
-f G "embeddedCliNewDefault" 3 217 "??0 *(??0 * cli,int8 c)" `1411  "* Receive character and put it to internal buffer"
+f G "embeddedCliNewDefault" 3 217 "??0 *()" `1411  "* Receive character and put it to internal buffer"
 C L "embeddedCliNewDefault" 3 219 1 "*"
 C L "embeddedCliNewDefault" 3 219 1 "*"
 C L "embeddedCliNewDefault" 3 219 1 "*"
@@ -3950,11 +3949,11 @@ C L "embeddedCliNewDefault" 3 219 1 "*"
 F N "embeddedCliReceiveChar" 3 228 ""
 V L "cli" 3 228 "??0 *" `1413 
 V L "c" 3 228 "int8" `1414 
-f G "embeddedCliReceiveChar" 3 228 "void(??0 * cli,int8 c,??0 * cli)" `1412  "* Process rx/tx buffers. Command callbacks are called from here"
+f G "embeddedCliReceiveChar" 3 228 "void(??0 * cli,int8 c)" `1412  "* Process rx/tx buffers. Command callbacks are called from here"
 C L "embeddedCliReceiveChar" 3 230 1 "*"
 F N "embeddedCliProcess" 3 234 ""
 V L "cli" 3 234 "??0 *" `1416 
-f G "embeddedCliProcess" 3 234 "void(??0 * cli,??0 * cli,CliCommandBinding binding)" `1415  "* Add specified binding to list of bindings. If list is already full, binding"
+f G "embeddedCliProcess" 3 234 "void(??0 * cli)" `1415  "* Add specified binding to list of bindings. If list is already full, binding"
 C L "embeddedCliProcess" 3 236 1 "*"
 C L "embeddedCliProcess" 3 236 1 "*"
 C L "embeddedCliProcess" 3 236 1 "*"
@@ -3962,7 +3961,7 @@ C L "embeddedCliProcess" 3 236 1 "*"
 F N "embeddedCliAddBinding" 3 243 ""
 V L "cli" 3 243 "??0 *" `1418 
 V L "binding" 3 243 "CliCommandBinding" `1419 
-f G "embeddedCliAddBinding" 3 243 "int8(??0 * cli,CliCommandBinding binding,??0 * cli,*int8 string)" `1417  "* Print specified string and account for currently entered but not submitted"
+f G "embeddedCliAddBinding" 3 243 "int8(??0 * cli,CliCommandBinding binding)" `1417  "* Print specified string and account for currently entered but not submitted"
 C L "embeddedCliAddBinding" 3 245 1 "*"
 C L "embeddedCliAddBinding" 3 245 1 "*"
 C L "embeddedCliAddBinding" 3 245 1 "*"
@@ -3971,11 +3970,11 @@ C L "embeddedCliAddBinding" 3 245 1 "*"
 F N "embeddedCliPrint" 3 253 ""
 V L "cli" 3 253 "??0 *" `1421 
 V L "string" 3 253 "*int8" `1422 
-f G "embeddedCliPrint" 3 253 "void(??0 * cli,*int8 string,??0 * cli)" `1420  "* Free allocated for cli memory"
+f G "embeddedCliPrint" 3 253 "void(??0 * cli,*int8 string)" `1420  "* Free allocated for cli memory"
 C L "embeddedCliPrint" 3 255 1 "*"
 F N "embeddedCliFree" 3 259 ""
 V L "cli" 3 259 "??0 *" `1424 
-f G "embeddedCliFree" 3 259 "void(??0 * cli,*int8 args)" `1423  "* Perform tokenization of arguments string. Original string is modified and"
+f G "embeddedCliFree" 3 259 "void(??0 * cli)" `1423  "* Perform tokenization of arguments string. Original string is modified and"
 C L "embeddedCliFree" 3 261 1 "*"
 C L "embeddedCliFree" 3 261 1 "*"
 C L "embeddedCliFree" 3 261 1 "*"
@@ -3986,21 +3985,21 @@ C L "embeddedCliFree" 3 261 1 "*"
 C L "embeddedCliFree" 3 261 1 "*"
 F N "embeddedCliTokenizeArgs" 3 273 ""
 V L "args" 3 273 "*int8" `1426 
-f G "embeddedCliTokenizeArgs" 3 273 "void(*int8 args,*int8 tokenizedStr,uint16_t pos)" `1425  "* Return specific token from tokenized string"
+f G "embeddedCliTokenizeArgs" 3 273 "void(*int8 args)" `1425  "* Return specific token from tokenized string"
 C L "embeddedCliTokenizeArgs" 3 275 1 "*"
 C L "embeddedCliTokenizeArgs" 3 275 1 "*"
 C L "embeddedCliTokenizeArgs" 3 275 1 "*"
 F N "embeddedCliGetToken" 3 281 ""
 V L "tokenizedStr" 3 281 "*int8" `1428 
 V L "pos" 3 281 "uint16_t" `1429 
-f G "embeddedCliGetToken" 3 281 "*int8(*int8 tokenizedStr,uint16_t pos,*int8 pos,uint16_t pos)" `1427  "* Same as embeddedCliGetToken but works on non-const buffer"
+f G "embeddedCliGetToken" 3 281 "*int8(*int8 tokenizedStr,uint16_t pos)" `1427  "* Same as embeddedCliGetToken but works on non-const buffer"
 C L "embeddedCliGetToken" 3 283 1 "*"
 C L "embeddedCliGetToken" 3 283 1 "*"
 C L "embeddedCliGetToken" 3 283 1 "*"
 F N "embeddedCliGetTokenVariable" 3 289 ""
 V L "tokenizedStr" 3 289 "*int8" `1431 
 V L "pos" 3 289 "uint16_t" `1432 
-f G "embeddedCliGetTokenVariable" 3 289 "*int8(*int8 tokenizedStr,uint16_t pos,*int8 pos,*int8 token)" `1430  "* Find token in provided tokens string and return its position (counted from 1)"
+f G "embeddedCliGetTokenVariable" 3 289 "*int8(*int8 tokenizedStr,uint16_t pos)" `1430  "* Find token in provided tokens string and return its position (counted from 1)"
 C L "embeddedCliGetTokenVariable" 3 291 1 "*"
 C L "embeddedCliGetTokenVariable" 3 291 1 "*"
 C L "embeddedCliGetTokenVariable" 3 291 1 "*"
@@ -4008,14 +4007,30 @@ C L "embeddedCliGetTokenVariable" 3 291 1 "*"
 F N "embeddedCliFindToken" 3 298 ""
 V L "tokenizedStr" 3 298 "*int8" `1434 
 V L "token" 3 298 "*int8" `1435 
-f G "embeddedCliFindToken" 3 298 "uint16_t(*int8 tokenizedStr,*int8 token,*int8 pos)" `1433  "* Return number of tokens in tokenized string"
+f G "embeddedCliFindToken" 3 298 "uint16_t(*int8 tokenizedStr,*int8 token)" `1433  "* Return number of tokens in tokenized string"
 C L "embeddedCliFindToken" 3 300 1 "*"
 C L "embeddedCliFindToken" 3 300 1 "*"
 F N "embeddedCliGetTokenCount" 3 305 ""
 V L "tokenizedStr" 3 305 "*int8" `1437 
 f G "embeddedCliGetTokenCount" 3 305 "uint16_t(*int8 tokenizedStr)" `1436  "EMBEDDED_CLI_H"
-F N "main" 0 5 ""
-F G "main" 0 6 "void()" `1438 
+C L "embeddedCliGetTokenCount" 1 19 1 "FUNCTION"
+F N "write_char" 1 20 ""
+V L "EmbeddedCli" 1 20 "??0 *" `1439 
+V L "c" 1 20 "int8" `1440 
+f G "write_char" 1 20 "void(??0 * EmbeddedCli,int8 c)" `1438 
+F N "ecli_setup" 1 21 ""
+f G "ecli_setup" 1 21 "void()" `1441 
+D G "EMBEDDED_CLI_IMPL" 0 2 ""
+C L "ecli_setup" 3 312 1 "FUNCTION"
+V G "cli" 0 5 "??0 *" `1442 
+F N "main" 0 8 ""
+F G "main" 0 9 "void()" `1443 
+C L "onLed" 0 19 1 "FUNCTION"
+F N "onLed" 0 20 ""
+V L "cli" 0 20 "??0 *" `1447 
+V L "args" 0 20 "*int8" `1448 
+V L "context" 0 20 "*void" `1449 
+F G "onLed" 0 21 "void(??0 * cli,*int8 args,*void context)" `1446  "use args as raw null-terminated string of all arguments"
 F B "reset_cpu" 0 0
 F B "abs" 1 0
 F B "sleep" 0 1

@@ -1,0 +1,19 @@
+#include "main.h"
+#define EMBEDDED_CLI_IMPL
+#include "embedded_cli.h"
+
+
+
+void main()
+{
+
+
+   EmbeddedCli *cli = embeddedCliNewDefault();
+   while(TRUE)
+   {
+      
+
+      //TODO: User Code
+   }
+
+}

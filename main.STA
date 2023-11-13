@@ -14,13 +14,13 @@ Stack size: 126
 Lines Stmts  %   Files
 ----- ----- ---  -----
    16     2 100  main.c
-   16     0   0  main.h
+   22     0   0  main.h
  3065     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Devices\18F57Q84.h
   313     0   0  embedded_cli.h
    39     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdbool.h
   195     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdint.h
 ----- -----
- 3644     2 Total
+ 3650     2 Total
 
 Page ROM  %  RAM    Vol Diff  Functions:
 ---- --- --- ---    --- ----  ----------
@@ -30,7 +30,7 @@ Page ROM  %  RAM    Vol Diff  Functions:
 Program metrics:
     Functions               1
     Statements              2
-    Comments                660
+    Comments                468
     Volume (V)              16
     Difficulty (D)          0.5
     Effort to implement (E) 8

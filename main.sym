@@ -1,3 +1,5 @@
+031.7   PWM1LD
+032.4   PWM1EN
 043-045 @WRITE_PROGRAM_MEMORY.P1
 04A.4   LVDRDY
 04A.5   LVDOUT
@@ -18,8 +20,8 @@
 340     CCP_1_LOW
 340     CCP_1
 341     CCP_1_HIGH
-344     CCP_2
 344     CCP_2_LOW
+344     CCP_2
 345     CCP_2_HIGH
 348     CCP_3
 348     CCP_3_LOW
@@ -28,49 +30,39 @@
 446.5   N1OUT
 44E.5   N2OUT
 456.5   N3OUT
-49C.0   PWM1LD
 49C     PWMLOAD
-49C.1   PWM2LD
-49C.2   PWM3LD
-49C.3   PWM4LD
-49D.0   PWM1EN
 49D     PWMENABLE
-49D.1   PWM2EN
-49D.2   PWM3EN
-49D.3   PWM4EN
-4E1-4E2 @READ_PACKED_MEMORY.P1
-4E1-4E2 @WRITE_PACKED_MEMORY.P2
-4E9-4EA @READ_PROGRAM_MEMORY.P1
-4E9-4EA @READ_PACKED_MEMORY.P2
-4E9-4EA @WRITE_PACKED_MEMORY.P3
-4E9-4EA @WRITE_PROGRAM_MEMORY.P4
+4E1-4E2 @WRITE_PACKED_MEMORY.P1
+4E1-4E2 @READ_PACKED_MEMORY.P2
+4E9-4EA @WRITE_PACKED_MEMORY.P1
+4E9-4EA @WRITE_PROGRAM_MEMORY.P2
+4E9-4EA @READ_PROGRAM_MEMORY.P3
+4E9-4EA @READ_PACKED_MEMORY.P4
 4F6-4F8 @READ_PROGRAM_MEMORY.P1
 500     @SCRATCH
 501     @SCRATCH
-501     _RETURN_
 501     @WRITE_PROGRAM_MEMORY.P1
 502     @SCRATCH
 503     @SCRATCH
+2031.7  PWM2LD
+2032.4  PWM2EN
 
 ROM Allocation:
-000004  main
-000004  @cinit1
-000036  @cinit2
 
 Project Directory:
     C:\Users\beadon\Documents\GitHub\ecli_demo\
 
 Project Files:
-    main.c                                                  [13-Nov-23 13:47  CRC=D872A938]
-    main.h                                                  [13-Nov-23 13:47  CRC=7DFCA5F0]
+    main.c                                                  [13-Nov-23 13:58  CRC=320B6BE4]
+    main.h                                                  [13-Nov-23 13:53  CRC=6EF04B80]
     ..\..\..\..\..\Program Files (x86)\PICC\Devices\18F57Q84.h [06-Oct-23 10:05  CRC=E1ABD381]
     embedded_cli.h                                          [13-Nov-23 13:40  CRC=3348B64B]
     ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdbool.h [17-Apr-19 09:48  CRC=969707C0]
     ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdint.h [13-May-20 05:33  CRC=4FD89CC0]
 
-Source signature=A1AC1A34
+Source signature=EC388270
 Program memory checksum=0000
-Hex file CRC=9C0E
+Hex file CRC=0000
 
 Units:
     C:\Users\beadon\Documents\GitHub\ecli_demo\main (main)
@@ -89,10 +81,4 @@ Output Files:
     XREF file:   main.xsym
     Errors:      main.err
     Ext Symbols: main.esym
-    INHX32:      main.hex
     Symbols:     main.sym
-    List:        main.lst
-    Debug/COFF:  main.cof
-    Project:     main.ccspjt
-    Call Tree:   main.tre
-    Statistics:  main.STA
