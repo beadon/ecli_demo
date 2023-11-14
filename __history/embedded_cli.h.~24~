@@ -61,8 +61,7 @@ typedef struct EmbeddedCli {
      * @param cli - pointer to cli that executed this function
      * @param c   - actual character to write
      */
-    // ORIG -- void (*writeChar)(EmbeddedCli *cli, char c);
-    void *(EmbeddedCli *cli, char c);
+    void (*writeChar)(EmbeddedCli *cli, char c);
 
     /**
      * Called when command is received and command not found in list of
@@ -70,9 +69,8 @@ typedef struct EmbeddedCli {
      * @param cli     - pointer to cli that executed this function
      * @param command - pointer to received command
      */
-    // ORIG -- void (*onCommand)(EmbeddedCli *cli, CliCommand *command);
     void (*onCommand)(EmbeddedCli *cli, CliCommand *command);
-    
+
     /**
      * Can be used for any application context
      */

@@ -8,12 +8,6 @@
 
 EmbeddedCli *cli = embeddedCliNewDefault();
 
-void writeChar(EmbeddedCli *embeddedCli, char c)
-{
-  // Hello !
-  // Handle some serial characters here
-  
-}
 
 void main()
 {
@@ -30,6 +24,11 @@ void main()
 
 }
 
+void writeChar(EmbeddedCli *embeddedCli, char c)
+{
+  // Hello !
+
+}
 
 /// For eCLI Command Processing
 void onLed(EmbeddedCli *cli, char *args, void *context)

@@ -8,20 +8,14 @@
 
 EmbeddedCli *cli = embeddedCliNewDefault();
 
-void writeChar(EmbeddedCli *embeddedCli, char c)
-{
-  // Hello !
-  // Handle some serial characters here
-  
-}
 
 void main()
 {
 
    EmbeddedCliConfig *config = embeddedCliDefaultConfig();
    config->maxBindingCount = 16;
-   cli->writeChar = writeChar;
-
+   void writeChar(EmbeddedCli *embeddedCli, char c);
+  
    while(TRUE)
    {
       embeddedCliProcess(cli);
@@ -30,6 +24,11 @@ void main()
 
 }
 
+void writeChar(EmbeddedCli *embeddedCli, char c)
+{
+  // Hello !
+
+}
 
 /// For eCLI Command Processing
 void onLed(EmbeddedCli *cli, char *args, void *context)

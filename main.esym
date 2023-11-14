@@ -1,9 +1,10 @@
-D G "__PCH__" 0 45 ""5.116""
-D G "__DEVICE__" 0 45 "5784"
-D G "__DATE__" 0 45 ""13-Nov-23""
-D G "__TIME__" 0 45 ""15:20:26""
-D G "_UNICODE" 0 45 ""?""
-D G "__EVAL" 0 45 ""?"" "Standard Header file for the PIC18F57Q84 device ////////////////"
+F N "embeddedCliNew" 6 406 ""
+D G "__PCH__" 6 469 ""5.116""
+D G "__DEVICE__" 6 469 "5784"
+D G "__DATE__" 6 469 ""13-Nov-23""
+D G "__TIME__" 6 469 ""15:30:33""
+D G "_UNICODE" 6 469 ""?""
+D G "__EVAL" 6 469 ""?"" "Standard Header file for the PIC18F57Q84 device ////////////////"
 c L "set_tris_a" 2 3 32 "FUNCTION"
 F N "set_tris_a" 2 86 ""
 V L "value" 2 86 "int8" `55 
@@ -3853,197 +3854,194 @@ C L "jump_to_isr" 3 49 1 "*"
 T G "CliCommand" 3 56 "{*int8 name,*int8 args}" `1369 
 C L "jump_to_isr" 3 59 1 "*"
 C L "jump_to_isr" 3 59 1 "*"
-C L "jump_to_isr" 3 59 1 "*"
-F N "*writeChar" 3 64 ""
-V L "EmbeddedCli" 3 64 "int8" `1372 
-T G "*writeChar" 3 64 "int8(int8 EmbeddedCli)" `1371 
-F N "cli" 3 64 ""
-V G "c" 3 64 "int8" `1374  "* Called when command is received and command not found in list of"
-C L "cli" 3 66 1 "*"
-C L "cli" 3 66 1 "*"
-C L "cli" 3 66 1 "*"
-F N "*onCommand" 3 72 ""
-V L "EmbeddedCli" 3 72 "int8" `1376 
-f G "*onCommand" 3 72 "void(int8 EmbeddedCli)" `1375 
-F N "cli" 3 72 ""
-V G "command" 3 72 "CliCommand *" `1378  "* Can be used for any application context"
-V G "appContext" 3 77 "*int8" `1379  "* Pointer to actual implementation, do not use."
-V G "_impl" 3 82 "*int8" `1380 
-F N "EmbeddedCli" 3 83 ""
-C L "EmbeddedCli" 3 85 1 "*"
-C L "EmbeddedCli" 3 89 1 "*"
-C L "EmbeddedCli" 3 94 1 "*"
-C L "EmbeddedCli" 3 94 1 "*"
-C L "EmbeddedCli" 3 94 1 "*"
-C L "EmbeddedCli" 3 101 1 "*"
-C L "EmbeddedCli" 3 106 1 "*"
-C L "EmbeddedCli" 3 106 1 "*"
-C L "EmbeddedCli" 3 112 1 "*"
-C L "EmbeddedCli" 3 112 1 "*"
-C L "EmbeddedCli" 3 112 1 "*"
-C L "EmbeddedCli" 3 112 1 "*"
-C L "EmbeddedCli" 3 112 1 "*"
-F N "*binding" 3 119 ""
-V L "EmbeddedCli" 3 119 "int8" `1387 
-T G "*binding" 3 119 "int8(int8 EmbeddedCli)" `1386 
-F N "cli" 3 119 ""
-V G "args" 3 119 "*int8" `1389 
-V G "args" 3 119 "*int8" `1389 
-F N "context" 3 119 ""
-F N "CliCommandBinding" 3 120 ""
-C L "CliCommandBinding" 3 122 1 "*"
-C L "CliCommandBinding" 3 126 1 "*"
-C L "CliCommandBinding" 3 126 1 "*"
-C L "CliCommandBinding" 3 132 1 "*"
-C L "CliCommandBinding" 3 137 1 "*"
-C L "CliCommandBinding" 3 137 1 "*"
-C L "CliCommandBinding" 3 143 1 "*"
-C L "CliCommandBinding" 3 143 1 "*"
-C L "CliCommandBinding" 3 143 1 "*"
-C L "CliCommandBinding" 3 150 1 "*"
-C L "CliCommandBinding" 3 150 1 "*"
-C L "CliCommandBinding" 3 150 1 "*"
-C L "CliCommandBinding" 3 157 1 "*"
-C L "CliCommandBinding" 3 157 1 "*"
-C L "CliCommandBinding" 3 157 1 "*"
-C L "CliCommandBinding" 3 164 1 "*"
-C L "CliCommandBinding" 3 169 1 "*"
-C L "CliCommandBinding" 3 169 1 "*"
-C L "CliCommandBinding" 3 169 1 "*"
-T G "EmbeddedCliConfig" 3 175 "{*int8 invitation,uint16_t rxBufferSize,uint16_t cmdBufferSize,uint16_t historyBufferSize,uint16_t maxBindingCount,??0 * cliBuffer,uint16_t cliBufferSize,int1 enableAutoComplete}" `1399  "* Returns pointer to default configuration for cli creation. It is safe to"
-C L "CliCommandBinding" 3 177 1 "*"
-C L "CliCommandBinding" 3 177 1 "*"
-C L "CliCommandBinding" 3 177 1 "*"
-C L "CliCommandBinding" 3 177 1 "*"
-C L "CliCommandBinding" 3 177 1 "*"
-C L "CliCommandBinding" 3 177 1 "*"
-C L "CliCommandBinding" 3 177 1 "*"
-C L "CliCommandBinding" 3 177 1 "*"
-C L "CliCommandBinding" 3 177 1 "*"
-C L "CliCommandBinding" 3 177 1 "*"
-C L "CliCommandBinding" 3 177 1 "*"
-C L "CliCommandBinding" 3 177 1 "*"
-C L "CliCommandBinding" 3 177 1 "*"
-C L "CliCommandBinding" 3 177 1 "*"
-F N "embeddedCliDefaultConfig" 3 194 ""
-f G "embeddedCliDefaultConfig" 3 194 "EmbeddedCliConfig *()" `1400  "* Returns how many space in config buffer is required for cli creation"
-C L "embeddedCliDefaultConfig" 3 196 1 "*"
-C L "embeddedCliDefaultConfig" 3 196 1 "*"
-C L "embeddedCliDefaultConfig" 3 196 1 "*"
-C L "embeddedCliDefaultConfig" 3 196 1 "*"
-C L "embeddedCliDefaultConfig" 3 196 1 "*"
-F N "embeddedCliRequiredSize" 3 204 ""
-V L "config" 3 204 "EmbeddedCliConfig *" `1402 
-f G "embeddedCliRequiredSize" 3 204 "uint16_t(EmbeddedCliConfig * config)" `1401  "* Create new CLI."
-C L "embeddedCliRequiredSize" 3 206 1 "*"
-C L "embeddedCliRequiredSize" 3 206 1 "*"
-C L "embeddedCliRequiredSize" 3 206 1 "*"
-C L "embeddedCliRequiredSize" 3 206 1 "*"
-F N "EmbeddedCli" 3 213 ""
-F N "embeddedCliNew" 3 213 ""
-V L "config" 3 213 "EmbeddedCliConfig *" `1404 
-f G "embeddedCliNew" 3 213 "int8(EmbeddedCliConfig * config)" `1403  "* Same as calling embeddedCliNew with default config."
-C L "embeddedCliNew" 3 215 1 "*"
-F N "EmbeddedCli" 3 219 ""
-F N "embeddedCliNewDefault" 3 219 ""
-f G "embeddedCliNewDefault" 3 219 "int8()" `1405  "* Receive character and put it to internal buffer"
-C L "embeddedCliNewDefault" 3 221 1 "*"
-C L "embeddedCliNewDefault" 3 221 1 "*"
-C L "embeddedCliNewDefault" 3 221 1 "*"
-C L "embeddedCliNewDefault" 3 221 1 "*"
-C L "embeddedCliNewDefault" 3 221 1 "*"
-C L "embeddedCliNewDefault" 3 221 1 "*"
-F N "embeddedCliReceiveChar" 3 230 ""
-V L "EmbeddedCli" 3 230 "int8" `1407 
-f G "embeddedCliReceiveChar" 3 230 "void(int8 EmbeddedCli)" `1406 
-F N "cli" 3 230 ""
-V L "EmbeddedCli" 3 230 "int8" `1407  "* Process rx/tx buffers. Command callbacks are called from here"
-C L "cli" 3 232 1 "*"
-F N "embeddedCliProcess" 3 236 ""
-V L "EmbeddedCli" 3 236 "int8" `1409 
-f G "embeddedCliProcess" 3 236 "void(int8 EmbeddedCli)" `1408 
-F N "cli" 3 236 ""
-C L "cli" 3 238 1 "*"
-C L "cli" 3 238 1 "*"
-C L "cli" 3 238 1 "*"
-C L "cli" 3 238 1 "*"
-C L "cli" 3 238 1 "*"
-F N "embeddedCliAddBinding" 3 245 ""
-V L "EmbeddedCli" 3 245 "int8" `1411 
-f G "embeddedCliAddBinding" 3 245 "int8(int8 EmbeddedCli)" `1410 
-F N "cli" 3 245 ""
-F N "CliCommandBinding" 3 245 ""
-C L "CliCommandBinding" 3 247 1 "*"
-C L "CliCommandBinding" 3 247 1 "*"
-C L "CliCommandBinding" 3 247 1 "*"
-C L "CliCommandBinding" 3 247 1 "*"
-C L "CliCommandBinding" 3 247 1 "*"
-C L "CliCommandBinding" 3 247 1 "*"
-F N "embeddedCliPrint" 3 255 ""
-V L "EmbeddedCli" 3 255 "int8" `1413 
-f G "embeddedCliPrint" 3 255 "void(int8 EmbeddedCli)" `1412 
-F N "cli" 3 255 ""
-V G "string" 3 255 "*int8" `1414  "* Free allocated for cli memory"
-C L "cli" 3 257 1 "*"
-F N "embeddedCliFree" 3 261 ""
-V L "EmbeddedCli" 3 261 "int8" `1416 
-f G "embeddedCliFree" 3 261 "void(int8 EmbeddedCli)" `1415 
-F N "cli" 3 261 ""
-C L "cli" 3 263 1 "*"
-C L "cli" 3 263 1 "*"
-C L "cli" 3 263 1 "*"
-C L "cli" 3 263 1 "*"
-C L "cli" 3 263 1 "*"
-C L "cli" 3 263 1 "*"
-C L "cli" 3 263 1 "*"
-C L "cli" 3 263 1 "*"
-C L "cli" 3 263 1 "*"
-F N "embeddedCliTokenizeArgs" 3 275 ""
-V L "args" 3 275 "*int8" `1418 
-f G "embeddedCliTokenizeArgs" 3 275 "void(*int8 args)" `1417  "* Return specific token from tokenized string"
-C L "embeddedCliTokenizeArgs" 3 277 1 "*"
-C L "embeddedCliTokenizeArgs" 3 277 1 "*"
-C L "embeddedCliTokenizeArgs" 3 277 1 "*"
-F N "embeddedCliGetToken" 3 283 ""
-V L "tokenizedStr" 3 283 "*int8" `1420 
-V L "pos" 3 283 "uint16_t" `1421 
-f G "embeddedCliGetToken" 3 283 "*int8(*int8 tokenizedStr,uint16_t pos)" `1419  "* Same as embeddedCliGetToken but works on non-const buffer"
-C L "embeddedCliGetToken" 3 285 1 "*"
-C L "embeddedCliGetToken" 3 285 1 "*"
-C L "embeddedCliGetToken" 3 285 1 "*"
-F N "embeddedCliGetTokenVariable" 3 291 ""
-V L "tokenizedStr" 3 291 "*int8" `1423 
-V L "pos" 3 291 "uint16_t" `1424 
-f G "embeddedCliGetTokenVariable" 3 291 "*int8(*int8 tokenizedStr,uint16_t pos)" `1422  "* Find token in provided tokens string and return its position (counted from 1)"
-C L "embeddedCliGetTokenVariable" 3 293 1 "*"
-C L "embeddedCliGetTokenVariable" 3 293 1 "*"
-C L "embeddedCliGetTokenVariable" 3 293 1 "*"
-C L "embeddedCliGetTokenVariable" 3 293 1 "*"
-F N "embeddedCliFindToken" 3 300 ""
-V L "tokenizedStr" 3 300 "*int8" `1426 
-V L "token" 3 300 "*int8" `1427 
-f G "embeddedCliFindToken" 3 300 "uint16_t(*int8 tokenizedStr,*int8 token)" `1425  "* Return number of tokens in tokenized string"
-C L "embeddedCliFindToken" 3 302 1 "*"
-C L "embeddedCliFindToken" 3 302 1 "*"
-F N "embeddedCliGetTokenCount" 3 307 ""
-V L "tokenizedStr" 3 307 "*int8" `1429 
-f G "embeddedCliGetTokenCount" 3 307 "uint16_t(*int8 tokenizedStr)" `1428  "EMBEDDED_CLI_H"
+C L "jump_to_isr" 3 59 2 "*"
+F N "cli" 3 65 ""
+V G "c" 3 65 "int8" `1371  "* Called when command is received and command not found in list of"
+C L "cli" 3 67 1 "*"
+C L "cli" 3 67 1 "*"
+C L "cli" 3 67 2 "*"
+F N "*onCommand" 3 74 ""
+V L "EmbeddedCli" 3 74 "int8" `1373 
+f G "*onCommand" 3 74 "void(int8 EmbeddedCli)" `1372 
+F N "cli" 3 74 ""
+V G "command" 3 74 "CliCommand *" `1375  "* Can be used for any application context"
+V G "appContext" 3 79 "*int8" `1376  "* Pointer to actual implementation, do not use."
+V G "_impl" 3 84 "*int8" `1377 
+F N "EmbeddedCli" 3 85 ""
+C L "EmbeddedCli" 3 87 1 "*"
+C L "EmbeddedCli" 3 91 1 "*"
+C L "EmbeddedCli" 3 96 1 "*"
+C L "EmbeddedCli" 3 96 1 "*"
+C L "EmbeddedCli" 3 96 1 "*"
+C L "EmbeddedCli" 3 103 1 "*"
+C L "EmbeddedCli" 3 108 1 "*"
+C L "EmbeddedCli" 3 108 1 "*"
+C L "EmbeddedCli" 3 114 1 "*"
+C L "EmbeddedCli" 3 114 1 "*"
+C L "EmbeddedCli" 3 114 1 "*"
+C L "EmbeddedCli" 3 114 1 "*"
+C L "EmbeddedCli" 3 114 1 "*"
+F N "*binding" 3 121 ""
+V L "EmbeddedCli" 3 121 "int8" `1384 
+T G "*binding" 3 121 "int8(int8 EmbeddedCli)" `1383 
+F N "cli" 3 121 ""
+V G "args" 3 121 "*int8" `1386 
+V G "args" 3 121 "*int8" `1386 
+F N "context" 3 121 ""
+F N "CliCommandBinding" 3 122 ""
+C L "CliCommandBinding" 3 124 1 "*"
+C L "CliCommandBinding" 3 128 1 "*"
+C L "CliCommandBinding" 3 128 1 "*"
+C L "CliCommandBinding" 3 134 1 "*"
+C L "CliCommandBinding" 3 139 1 "*"
+C L "CliCommandBinding" 3 139 1 "*"
+C L "CliCommandBinding" 3 145 1 "*"
+C L "CliCommandBinding" 3 145 1 "*"
+C L "CliCommandBinding" 3 145 1 "*"
+C L "CliCommandBinding" 3 152 1 "*"
+C L "CliCommandBinding" 3 152 1 "*"
+C L "CliCommandBinding" 3 152 1 "*"
+C L "CliCommandBinding" 3 159 1 "*"
+C L "CliCommandBinding" 3 159 1 "*"
+C L "CliCommandBinding" 3 159 1 "*"
+C L "CliCommandBinding" 3 166 1 "*"
+C L "CliCommandBinding" 3 171 1 "*"
+C L "CliCommandBinding" 3 171 1 "*"
+C L "CliCommandBinding" 3 171 1 "*"
+T G "EmbeddedCliConfig" 3 177 "{*int8 invitation,uint16_t rxBufferSize,uint16_t cmdBufferSize,uint16_t historyBufferSize,uint16_t maxBindingCount,??0 * cliBuffer,uint16_t cliBufferSize,int1 enableAutoComplete}" `1396  "* Returns pointer to default configuration for cli creation. It is safe to"
+C L "CliCommandBinding" 3 179 1 "*"
+C L "CliCommandBinding" 3 179 1 "*"
+C L "CliCommandBinding" 3 179 1 "*"
+C L "CliCommandBinding" 3 179 1 "*"
+C L "CliCommandBinding" 3 179 1 "*"
+C L "CliCommandBinding" 3 179 1 "*"
+C L "CliCommandBinding" 3 179 1 "*"
+C L "CliCommandBinding" 3 179 1 "*"
+C L "CliCommandBinding" 3 179 1 "*"
+C L "CliCommandBinding" 3 179 1 "*"
+C L "CliCommandBinding" 3 179 1 "*"
+C L "CliCommandBinding" 3 179 1 "*"
+C L "CliCommandBinding" 3 179 1 "*"
+C L "CliCommandBinding" 3 179 1 "*"
+F N "embeddedCliDefaultConfig" 3 196 ""
+f G "embeddedCliDefaultConfig" 3 196 "EmbeddedCliConfig *()" `1397  "* Returns how many space in config buffer is required for cli creation"
+C L "embeddedCliDefaultConfig" 3 198 1 "*"
+C L "embeddedCliDefaultConfig" 3 198 1 "*"
+C L "embeddedCliDefaultConfig" 3 198 1 "*"
+C L "embeddedCliDefaultConfig" 3 198 1 "*"
+C L "embeddedCliDefaultConfig" 3 198 1 "*"
+F N "embeddedCliRequiredSize" 3 206 ""
+V L "config" 3 206 "EmbeddedCliConfig *" `1399 
+f G "embeddedCliRequiredSize" 3 206 "uint16_t(EmbeddedCliConfig * config)" `1398  "* Create new CLI."
+C L "embeddedCliRequiredSize" 3 208 1 "*"
+C L "embeddedCliRequiredSize" 3 208 1 "*"
+C L "embeddedCliRequiredSize" 3 208 1 "*"
+C L "embeddedCliRequiredSize" 3 208 1 "*"
+F N "EmbeddedCli" 3 215 ""
+F N "embeddedCliNew" 3 215 ""
+V L "config" 3 215 "EmbeddedCliConfig *" `1401 
+f G "embeddedCliNew" 3 215 "int8(EmbeddedCliConfig * config)" `1400  "* Same as calling embeddedCliNew with default config."
+C L "embeddedCliNew" 3 217 1 "*"
+F N "EmbeddedCli" 3 221 ""
+F N "embeddedCliNewDefault" 3 221 ""
+f G "embeddedCliNewDefault" 3 221 "int8()" `1402  "* Receive character and put it to internal buffer"
+C L "embeddedCliNewDefault" 3 223 1 "*"
+C L "embeddedCliNewDefault" 3 223 1 "*"
+C L "embeddedCliNewDefault" 3 223 1 "*"
+C L "embeddedCliNewDefault" 3 223 1 "*"
+C L "embeddedCliNewDefault" 3 223 1 "*"
+C L "embeddedCliNewDefault" 3 223 1 "*"
+F N "embeddedCliReceiveChar" 3 232 ""
+V L "EmbeddedCli" 3 232 "int8" `1404 
+f G "embeddedCliReceiveChar" 3 232 "void(int8 EmbeddedCli)" `1403 
+F N "cli" 3 232 ""
+V L "EmbeddedCli" 3 232 "int8" `1404  "* Process rx/tx buffers. Command callbacks are called from here"
+C L "cli" 3 234 1 "*"
+F N "embeddedCliProcess" 3 238 ""
+V L "EmbeddedCli" 3 238 "int8" `1406 
+f G "embeddedCliProcess" 3 238 "void(int8 EmbeddedCli)" `1405 
+F N "cli" 3 238 ""
+C L "cli" 3 240 1 "*"
+C L "cli" 3 240 1 "*"
+C L "cli" 3 240 1 "*"
+C L "cli" 3 240 1 "*"
+C L "cli" 3 240 1 "*"
+F N "embeddedCliAddBinding" 3 247 ""
+V L "EmbeddedCli" 3 247 "int8" `1408 
+f G "embeddedCliAddBinding" 3 247 "int8(int8 EmbeddedCli)" `1407 
+F N "cli" 3 247 ""
+F N "CliCommandBinding" 3 247 ""
+C L "CliCommandBinding" 3 249 1 "*"
+C L "CliCommandBinding" 3 249 1 "*"
+C L "CliCommandBinding" 3 249 1 "*"
+C L "CliCommandBinding" 3 249 1 "*"
+C L "CliCommandBinding" 3 249 1 "*"
+C L "CliCommandBinding" 3 249 1 "*"
+F N "embeddedCliPrint" 3 257 ""
+V L "EmbeddedCli" 3 257 "int8" `1410 
+f G "embeddedCliPrint" 3 257 "void(int8 EmbeddedCli)" `1409 
+F N "cli" 3 257 ""
+V G "string" 3 257 "*int8" `1411  "* Free allocated for cli memory"
+C L "cli" 3 259 1 "*"
+F N "embeddedCliFree" 3 263 ""
+V L "EmbeddedCli" 3 263 "int8" `1413 
+f G "embeddedCliFree" 3 263 "void(int8 EmbeddedCli)" `1412 
+F N "cli" 3 263 ""
+C L "cli" 3 265 1 "*"
+C L "cli" 3 265 1 "*"
+C L "cli" 3 265 1 "*"
+C L "cli" 3 265 1 "*"
+C L "cli" 3 265 1 "*"
+C L "cli" 3 265 1 "*"
+C L "cli" 3 265 1 "*"
+C L "cli" 3 265 1 "*"
+C L "cli" 3 265 1 "*"
+F N "embeddedCliTokenizeArgs" 3 277 ""
+V L "args" 3 277 "*int8" `1415 
+f G "embeddedCliTokenizeArgs" 3 277 "void(*int8 args)" `1414  "* Return specific token from tokenized string"
+C L "embeddedCliTokenizeArgs" 3 279 1 "*"
+C L "embeddedCliTokenizeArgs" 3 279 1 "*"
+C L "embeddedCliTokenizeArgs" 3 279 1 "*"
+F N "embeddedCliGetToken" 3 285 ""
+V L "tokenizedStr" 3 285 "*int8" `1417 
+V L "pos" 3 285 "uint16_t" `1418 
+f G "embeddedCliGetToken" 3 285 "*int8(*int8 tokenizedStr,uint16_t pos)" `1416  "* Same as embeddedCliGetToken but works on non-const buffer"
+C L "embeddedCliGetToken" 3 287 1 "*"
+C L "embeddedCliGetToken" 3 287 1 "*"
+C L "embeddedCliGetToken" 3 287 1 "*"
+F N "embeddedCliGetTokenVariable" 3 293 ""
+V L "tokenizedStr" 3 293 "*int8" `1420 
+V L "pos" 3 293 "uint16_t" `1421 
+f G "embeddedCliGetTokenVariable" 3 293 "*int8(*int8 tokenizedStr,uint16_t pos)" `1419  "* Find token in provided tokens string and return its position (counted from 1)"
+C L "embeddedCliGetTokenVariable" 3 295 1 "*"
+C L "embeddedCliGetTokenVariable" 3 295 1 "*"
+C L "embeddedCliGetTokenVariable" 3 295 1 "*"
+C L "embeddedCliGetTokenVariable" 3 295 1 "*"
+F N "embeddedCliFindToken" 3 302 ""
+V L "tokenizedStr" 3 302 "*int8" `1423 
+V L "token" 3 302 "*int8" `1424 
+f G "embeddedCliFindToken" 3 302 "uint16_t(*int8 tokenizedStr,*int8 token)" `1422  "* Return number of tokens in tokenized string"
+C L "embeddedCliFindToken" 3 304 1 "*"
+C L "embeddedCliFindToken" 3 304 1 "*"
+F N "embeddedCliGetTokenCount" 3 309 ""
+V L "tokenizedStr" 3 309 "*int8" `1426 
+f G "embeddedCliGetTokenCount" 3 309 "uint16_t(*int8 tokenizedStr)" `1425  "EMBEDDED_CLI_H"
 C L "embeddedCliGetTokenCount" 1 18 1 "FUNCTION"
 F N "writeChar" 1 19 ""
-V L "EmbeddedCli" 1 19 "int8" `1431 
-f G "writeChar" 1 19 "*int8(int8 EmbeddedCli)" `1430 
+V L "EmbeddedCli" 1 19 "int8" `1428 
+f G "writeChar" 1 19 "void(int8 EmbeddedCli)" `1427 
 F N "EmbeddedCli" 1 19 ""
-V L "EmbeddedCli" 1 19 "int8" `1431 
+V L "EmbeddedCli" 1 19 "int8" `1428 
 F N "ecli_setup" 1 20 ""
-f G "ecli_setup" 1 20 "void()" `1432 
+f G "ecli_setup" 1 20 "void()" `1429 
 D G "EMBEDDED_CLI_IMPL" 0 3 ""
-C L "ecli_setup" 3 314 1 "FUNCTION"
+C L "ecli_setup" 3 316 1 "FUNCTION"
 C L "ecli_setup" 0 6 1 "FUNCTION"
 D G "_STDLIB" 7 13 ""
 D G "RAND_MAX" 7 20 "32767" "The value of which is the maximum value"
 D G "LONG_POINTERS" 7 26 "1"
-T G "div_t" 7 34 "{sint8 quot,sint8 rem}" `1436 
-T G "ldiv_t" 7 39 "{sint16 quot,sint16 rem}" `1440  "(C) Copyright 1996,2003 Custom Computer Services           ////"
+T G "div_t" 7 34 "{sint8 quot,sint8 rem}" `1433 
+T G "ldiv_t" 7 39 "{sint16 quot,sint16 rem}" `1437  "(C) Copyright 1996,2003 Custom Computer Services           ////"
 D G "_STDDEF" 8 13 ""
 D G "ptrdiff_t" 8 18 "unsigned int16"
 D G "size_t" 8 24 "unsigned int16"
@@ -4054,48 +4052,48 @@ C L "ecli_setup" 7 44 2 "FUNCTION"
 C L "ecli_setup" 7 47 1 "*"
 C L "ecli_setup" 7 47 1 "*"
 F N "atoi" 7 51 ""
-V L "s" 7 51 "*int8" `1442 
-f G "atoi" 7 51 "sint8(*int8 s)" `1441  "Syntax: signed int32  atoi32(char * s)"
+V L "s" 7 51 "*int8" `1439 
+f G "atoi" 7 51 "sint8(*int8 s)" `1438  "Syntax: signed int32  atoi32(char * s)"
 F N "atoi32" 7 59 ""
-V L "s" 7 59 "*int8" `1444 
-f G "atoi32" 7 59 "sint32(*int8 s,int8 base,*int8 s)" `1443  "Syntax: char *  itoa(signed int32 num, int8 base, char * s)"
+V L "s" 7 59 "*int8" `1441 
+f G "atoi32" 7 59 "sint32(*int8 s)" `1440  "Syntax: char *  itoa(signed int32 num, int8 base, char * s)"
 C L "atoi32" 7 47 2 "FUNCTION"
 F N "itoa" 7 80 ""
-V L "num" 7 80 "sint32" `1446 
-V L "base" 7 80 "int8" `1447 
-V L "s" 7 80 "*int8" `1448 
-f G "itoa" 7 80 "*int8(sint32 num,int8 base,*int8 s)" `1445  "Standard template: signed int16  atol(char * s)"
+V L "num" 7 80 "sint32" `1443 
+V L "base" 7 80 "int8" `1444 
+V L "s" 7 80 "*int8" `1445 
+f G "itoa" 7 80 "*int8(sint32 num,int8 base,*int8 s)" `1442  "Standard template: signed int16  atol(char * s)"
 C L "itoa" 7 82 1 "*"
 C L "itoa" 7 82 1 "*"
 F N "atol" 7 86 ""
-V L "s" 7 86 "*int8" `1450 
-f G "atol" 7 86 "sint16(*int8 s,*int8 endptr,sint8 base)" `1449  "Standard template: int16 strtoul(char * s,char *endptr,signed int base)"
+V L "s" 7 86 "*int8" `1447 
+f G "atol" 7 86 "sint16(*int8 s)" `1446  "Standard template: int16 strtoul(char * s,char *endptr,signed int base)"
 C L "atol" 7 88 1 "*"
 C L "atol" 7 88 1 "*"
 C L "atol" 7 88 1 "*"
 C L "atol" 7 88 1 "*"
 F N "strtol" 7 94 ""
-V L "s" 7 94 "*int8" `1452 
-V L "endptr" 7 94 "*int8" `1453 
-V L "base" 7 94 "sint8" `1454 
-f G "strtol" 7 94 "sint16(*int8 s,*int8 endptr,sint8 base,*int8 endptr,sint8 base)" `1451  "Standard template: int16 strtoul(char * s,char *endptr,signed int base)"
+V L "s" 7 94 "*int8" `1449 
+V L "endptr" 7 94 "*int8" `1450 
+V L "base" 7 94 "sint8" `1451 
+f G "strtol" 7 94 "sint16(*int8 s,*int8 endptr,sint8 base)" `1448  "Standard template: int16 strtoul(char * s,char *endptr,signed int base)"
 C L "strtol" 7 96 1 "*"
 C L "strtol" 7 96 1 "*"
 C L "strtol" 7 96 1 "*"
 C L "strtol" 7 96 1 "*"
 F N "strtoul" 7 102 ""
-V L "s" 7 102 "*int8" `1456 
-V L "endptr" 7 102 "*int8" `1457 
-V L "base" 7 102 "sint8" `1458 
-f G "strtoul" 7 102 "int16(*int8 s,*int8 endptr,sint8 base,??0 * endptr)" `1455  "Standart template: float strtof(char * s,char *endptr)"
+V L "s" 7 102 "*int8" `1453 
+V L "endptr" 7 102 "*int8" `1454 
+V L "base" 7 102 "sint8" `1455 
+f G "strtoul" 7 102 "int16(*int8 s,*int8 endptr,sint8 base)" `1452  "Standart template: float strtof(char * s,char *endptr)"
 C L "strtoul" 7 96 2 "FUNCTION"
 C L "strtoul" 7 104 1 "*"
 C L "strtoul" 7 104 1 "*"
 C L "strtoul" 7 104 1 "*"
 F N "strtof" 7 111 ""
-V L "s" 7 111 "*int8" `1460 
-V L "endptr" 7 111 "??0 *" `1461 
-f G "strtof" 7 111 "float(*int8 s,??0 * endptr,*int8 s)" `1459  "provided for compatibility"
+V L "s" 7 111 "*int8" `1457 
+V L "endptr" 7 111 "??0 *" `1458 
+f G "strtof" 7 111 "float(*int8 s,??0 * endptr)" `1456  "provided for compatibility"
 D G "strtof48" 7 117 "(s,e) strtof(s, e)"
 D G "strtod" 7 118 "(s,e) strtof(s, e)"
 C L "strtof" 7 104 1 "FUNCTION"
@@ -4106,8 +4104,8 @@ C L "strtof" 7 144 1 "*"
 C L "strtof" 7 144 1 "*"
 C L "strtof" 7 144 1 "*"
 F N "atoe" 7 150 ""
-V L "s" 7 150 "*int8" `1464 
-f G "atoe" 7 150 "float(*int8 s,int32 seed)" `1463  "Pseudo-random sequence generation functions"
+V L "s" 7 150 "*int8" `1461 
+f G "atoe" 7 150 "float(*int8 s)" `1460  "Pseudo-random sequence generation functions"
 C L "atoe" 7 144 1 "FUNCTION"
 C L "atoe" 7 161 1 "*"
 C L "atoe" 7 161 1 "*"
@@ -4115,7 +4113,7 @@ C L "atoe" 7 161 1 "*"
 C L "atoe" 7 161 1 "*"
 C L "atoe" 7 161 1 "*"
 F N "rand" 7 170 ""
-f G "rand" 7 170 "int16()" `1465  "The srand function uses the argument as a seed for a new sequence of"
+f G "rand" 7 170 "int16()" `1462  "The srand function uses the argument as a seed for a new sequence of"
 C L "rand" 7 172 1 "*"
 C L "rand" 7 172 1 "*"
 C L "rand" 7 172 1 "*"
@@ -4132,12 +4130,12 @@ C L "rand" 7 172 1 "*"
 C L "rand" 7 172 1 "*"
 C L "rand" 7 172 1 "*"
 F N "srand" 7 192 ""
-V L "seed" 7 192 "int32" `1467 
-f G "srand" 7 192 "void(int32 seed)" `1466  "Memory management functions"
+V L "seed" 7 192 "int32" `1464 
+f G "srand" 7 192 "void(int32 seed)" `1463  "Memory management functions"
 C L "srand" 7 172 3 "FUNCTION"
 F N "system" 7 206 ""
-V L "string" 7 206 "*int8" `1469 
-f G "system" 7 206 "sint8(*int8 string,sint8 denom)" `1468  "Searching and sorting utilities"
+V L "string" 7 206 "*int8" `1466 
+f G "system" 7 206 "sint8(*int8 string)" `1465  "Searching and sorting utilities"
 C L "system" 7 172 1 "FUNCTION"
 C L "system" 7 212 1 "*"
 C L "system" 7 212 1 "*"
@@ -4160,13 +4158,13 @@ C L "system" 7 230 1 "*"
 C L "system" 7 230 1 "*"
 D G "labs" 7 250 "abs"
 F N "div" 7 252 ""
-V L "numer" 7 252 "sint8" `1471 
-V L "denom" 7 252 "sint8" `1472 
-f G "div" 7 252 "div_t(sint8 numer,sint8 denom,sint16 denom)" `1470 
+V L "numer" 7 252 "sint8" `1468 
+V L "denom" 7 252 "sint8" `1469 
+f G "div" 7 252 "div_t(sint8 numer,sint8 denom)" `1467 
 F N "ldiv" 7 253 ""
-V L "numer" 7 253 "sint16" `1474 
-V L "denom" 7 253 "sint16" `1475 
-f G "ldiv" 7 253 "ldiv_t(sint16 numer,sint16 denom,*void s2,int16 n)" `1473  "Multibyte character functions"
+V L "numer" 7 253 "sint16" `1471 
+V L "denom" 7 253 "sint16" `1472 
+f G "ldiv" 7 253 "ldiv_t(sint16 numer,sint16 denom)" `1470  "Multibyte character functions"
 C L "ldiv" 7 230 4 "FUNCTION"
 C L "ldiv" 8 2 7 "FUNCTION"
 D G "_STRING" 9 12 ""
@@ -4185,172 +4183,172 @@ D G "isgraph" 10 23 "(x)  ((x)>' ')"
 D G "ispunct" 10 24 "(x)  (((x)>' ')&&!isalnum(x))"
 C L "ldiv" 9 19 10 "FUNCTION"
 F N "memmove" 9 34 ""
-V L "s1" 9 34 "*void" `1477 
-V L "s2" 9 34 "*void" `1478 
-V L "n" 9 34 "int16" `1479 
-F G "memmove" 9 35 "*int8(*void s1,*void s2,int16 n)" `1476 
-V L "sc1" 9 36 "*int8" `1480 
-V L "sc2" 9 37 "*int8" `1481 
+V L "s1" 9 34 "*void" `1474 
+V L "s2" 9 34 "*void" `1475 
+V L "n" 9 34 "int16" `1476 
+F G "memmove" 9 35 "*int8(*void s1,*void s2,int16 n)" `1473 
+V L "sc1" 9 36 "*int8" `1477 
+V L "sc2" 9 37 "*int8" `1478 
 D G "strcopy" 9 54 "strcpy"
 C L "strncpy" 9 19 4 "FUNCTION"
 F N "strncpy" 9 61 ""
-V L "s1" 9 61 "*int8" `1483 
-V L "s2" 9 61 "*int8" `1484 
-V L "n" 9 61 "int16" `1485 
-F G "strncpy" 9 62 "*int8(*int8 s1,*int8 s2,int16 n,*int8 s1,*int8 s2)" `1482 
-V L "s" 9 63 "*int8" `1486 
+V L "s1" 9 61 "*int8" `1480 
+V L "s2" 9 61 "*int8" `1481 
+V L "n" 9 61 "int16" `1482 
+F G "strncpy" 9 62 "*int8(*int8 s1,*int8 s2,int16 n)" `1479 
+V L "s" 9 63 "*int8" `1483 
 C L "strcat" 9 19 3 "FUNCTION"
 F N "strcat" 9 78 ""
-V L "s1" 9 78 "*int8" `1488 
-V L "s2" 9 78 "*int8" `1489 
-F G "strcat" 9 79 "*int8(*int8 s1,*int8 s2,*int8 s1,*int8 s2,int16 n)" `1487 
-V L "s" 9 80 "*int8" `1490 
+V L "s1" 9 78 "*int8" `1485 
+V L "s2" 9 78 "*int8" `1486 
+F G "strcat" 9 79 "*int8(*int8 s1,*int8 s2)" `1484 
+V L "s" 9 80 "*int8" `1487 
 C L "strncat" 9 19 2 "FUNCTION"
 F N "strncat" 9 96 ""
-V L "s1" 9 96 "*int8" `1492 
-V L "s2" 9 96 "*int8" `1493 
-V L "n" 9 96 "int16" `1494 
-F G "strncat" 9 97 "*int8(*int8 s1,*int8 s2,int16 n,*void s1,*void s2,int16 n)" `1491 
-V L "s" 9 98 "*int8" `1495 
+V L "s1" 9 96 "*int8" `1489 
+V L "s2" 9 96 "*int8" `1490 
+V L "n" 9 96 "int16" `1491 
+F G "strncat" 9 97 "*int8(*int8 s1,*int8 s2,int16 n)" `1488 
+V L "s" 9 98 "*int8" `1492 
 C L "memcmp" 9 19 3 "FUNCTION"
 F N "memcmp" 9 120 ""
-V L "s1" 9 120 "*void" `1497 
-V L "s2" 9 120 "*void" `1498 
-V L "n" 9 120 "int16" `1499 
-F G "memcmp" 9 121 "sint8(*void s1,*void s2,int16 n)" `1496 
-V L "su1" 9 122 "*int8" `1500 
-V L "su2" 9 122 "*int8" `1501 
+V L "s1" 9 120 "*void" `1494 
+V L "s2" 9 120 "*void" `1495 
+V L "n" 9 120 "int16" `1496 
+F G "memcmp" 9 121 "sint8(*void s1,*void s2,int16 n)" `1493 
+V L "su1" 9 122 "*int8" `1497 
+V L "su2" 9 122 "*int8" `1498 
 C L "strcmp" 9 19 2 "FUNCTION"
 F N "strcmp" 9 134 ""
-V L "s1" 9 134 "*int8" `1503 
-V L "s2" 9 134 "*int8" `1504 
-F G "strcmp" 9 135 "sint8(*int8 s1,*int8 s2,*int8 s2)" `1502 
+V L "s1" 9 134 "*int8" `1500 
+V L "s2" 9 134 "*int8" `1501 
+F G "strcmp" 9 135 "sint8(*int8 s1,*int8 s2)" `1499 
 C L "strcoll" 9 19 2 "FUNCTION"
 F N "strcoll" 9 144 ""
-V L "s1" 9 144 "*int8" `1506 
-V L "s2" 9 144 "*int8" `1507 
-F G "strcoll" 9 145 "sint8(*int8 s1,*int8 s2,*int8 s2,int16 n)" `1505 
+V L "s1" 9 144 "*int8" `1503 
+V L "s2" 9 144 "*int8" `1504 
+F G "strcoll" 9 145 "sint8(*int8 s1,*int8 s2)" `1502 
 C L "strncmp" 9 19 4 "FUNCTION"
 F N "strncmp" 9 157 ""
-V L "s1" 9 157 "*int8" `1509 
-V L "s2" 9 157 "*int8" `1510 
-V L "n" 9 157 "int16" `1511 
-F G "strncmp" 9 158 "sint8(*int8 s1,*int8 s2,int16 n,*int8 s2,int16 n)" `1508 
+V L "s1" 9 157 "*int8" `1506 
+V L "s2" 9 157 "*int8" `1507 
+V L "n" 9 157 "int16" `1508 
+F G "strncmp" 9 158 "sint8(*int8 s1,*int8 s2,int16 n)" `1505 
 C L "strxfrm" 9 19 4 "FUNCTION"
 F N "strxfrm" 9 170 ""
-V L "s1" 9 170 "*int8" `1513 
-V L "s2" 9 170 "*int8" `1514 
-V L "n" 9 170 "int16" `1515 
-F G "strxfrm" 9 171 "int16(*int8 s1,*int8 s2,int16 n)" `1512 
-V L "c" 9 172 "int8" `1516 
-V L "n1" 9 173 "int16" `1517 
+V L "s1" 9 170 "*int8" `1510 
+V L "s2" 9 170 "*int8" `1511 
+V L "n" 9 170 "int16" `1512 
+F G "strxfrm" 9 171 "int16(*int8 s1,*int8 s2,int16 n)" `1509 
+V L "c" 9 172 "int8" `1513 
+V L "n1" 9 173 "int16" `1514 
 C L "strxfrm" 9 19 1 "FUNCTION"
 C L "memchr" 9 19 3 "FUNCTION"
 F N "memchr" 9 201 ""
-V L "s" 9 201 "*void" `1519 
-V L "c" 9 201 "int8" `1520 
-V L "n" 9 201 "int16" `1521 
-F G "memchr" 9 202 "*int8(*void s,int8 c,int16 n)" `1518 
-V L "uc" 9 203 "int8" `1522 
-V L "su" 9 204 "*int8" `1523 
+V L "s" 9 201 "*void" `1516 
+V L "c" 9 201 "int8" `1517 
+V L "n" 9 201 "int16" `1518 
+F G "memchr" 9 202 "*int8(*void s,int8 c,int16 n)" `1515 
+V L "uc" 9 203 "int8" `1519 
+V L "su" 9 204 "*int8" `1520 
 C L "strchr" 9 19 2 "FUNCTION"
 F N "strchr" 9 215 ""
-V L "s" 9 215 "*int8" `1525 
-V L "c" 9 215 "int8" `1526 
-F G "strchr" 9 216 "*int8(*int8 s,int8 c,*int8 s2)" `1524 
+V L "s" 9 215 "*int8" `1522 
+V L "c" 9 215 "int8" `1523 
+F G "strchr" 9 216 "*int8(*int8 s,int8 c)" `1521 
 C L "strcspn" 9 19 4 "FUNCTION"
 F N "strcspn" 9 227 ""
-V L "s1" 9 227 "*int8" `1528 
-V L "s2" 9 227 "*int8" `1529 
-F G "strcspn" 9 228 "int16(*int8 s1,*int8 s2)" `1527 
-V L "sc1" 9 229 "*int8" `1530 
-V L "sc2" 9 229 "*int8" `1531 
+V L "s1" 9 227 "*int8" `1525 
+V L "s2" 9 227 "*int8" `1526 
+F G "strcspn" 9 228 "int16(*int8 s1,*int8 s2)" `1524 
+V L "sc1" 9 229 "*int8" `1527 
+V L "sc2" 9 229 "*int8" `1528 
 C L "strpbrk" 9 19 4 "FUNCTION"
 F N "strpbrk" 9 242 ""
-V L "s1" 9 242 "*int8" `1533 
-V L "s2" 9 242 "*int8" `1534 
-F G "strpbrk" 9 243 "*int8(*int8 s1,*int8 s2)" `1532 
-V L "sc1" 9 244 "*int8" `1535 
-V L "sc2" 9 244 "*int8" `1536 
+V L "s1" 9 242 "*int8" `1530 
+V L "s2" 9 242 "*int8" `1531 
+F G "strpbrk" 9 243 "*int8(*int8 s1,*int8 s2)" `1529 
+V L "sc1" 9 244 "*int8" `1532 
+V L "sc2" 9 244 "*int8" `1533 
 C L "strrchr" 9 19 2 "FUNCTION"
 F N "strrchr" 9 257 ""
-V L "s" 9 257 "*int8" `1538 
-V L "c" 9 257 "int8" `1539 
-F G "strrchr" 9 258 "*int8(*int8 s,int8 c,*int8 s1,*int8 s2)" `1537 
-V L "p" 9 259 "*int8" `1540 
+V L "s" 9 257 "*int8" `1535 
+V L "c" 9 257 "int8" `1536 
+F G "strrchr" 9 258 "*int8(*int8 s,int8 c)" `1534 
+V L "p" 9 259 "*int8" `1537 
 C L "strspn" 9 19 2 "FUNCTION"
 F N "strspn" 9 272 ""
-V L "s1" 9 272 "*int8" `1542 
-V L "s2" 9 272 "*int8" `1543 
-F G "strspn" 9 273 "int16(*int8 s1,*int8 s2)" `1541 
-V L "sc1" 9 274 "*int8" `1544 
-V L "sc2" 9 274 "*int8" `1545 
+V L "s1" 9 272 "*int8" `1539 
+V L "s2" 9 272 "*int8" `1540 
+F G "strspn" 9 273 "int16(*int8 s1,*int8 s2)" `1538 
+V L "sc1" 9 274 "*int8" `1541 
+V L "sc2" 9 274 "*int8" `1542 
 C L "strstr" 9 19 6 "FUNCTION"
 F N "strstr" 9 291 ""
-V L "s1" 9 291 "*int8" `1547 
-V L "s2" 9 291 "*int8" `1548 
-F G "strstr" 9 292 "*int8(*int8 s1,*int8 s2)" `1546 
-V L "s" 9 293 "*int8" `1549 
-V L "t" 9 293 "*int8" `1550 
+V L "s1" 9 291 "*int8" `1544 
+V L "s2" 9 291 "*int8" `1545 
+F G "strstr" 9 292 "*int8(*int8 s1,*int8 s2)" `1543 
+V L "s" 9 293 "*int8" `1546 
+V L "t" 9 293 "*int8" `1547 
 C L "strlen" 9 19 2 "FUNCTION"
 F N "strlen" 9 318 ""
-V L "s" 9 318 "*int8" `1552 
-F G "strlen" 9 319 "int16(*int8 s,*int8 s1,*int8 s2)" `1551 
-V L "sc" 9 320 "*int8" `1553 
+V L "s" 9 318 "*int8" `1549 
+F G "strlen" 9 319 "int16(*int8 s)" `1548 
+V L "sc" 9 320 "*int8" `1550 
 C L "strtok" 9 19 13 "FUNCTION"
 F N "strtok" 9 341 ""
-V L "s1" 9 341 "*int8" `1555 
-V L "s2" 9 341 "*int8" `1556 
-F G "strtok" 9 342 "*int8(*int8 s1,*int8 s2)" `1554 
-V L "beg" 9 343 "*int8" `1557 
-V L "end" 9 343 "*int8" `1558 
-V L "save" 9 344 "*int8" `1559 
+V L "s1" 9 341 "*int8" `1552 
+V L "s2" 9 341 "*int8" `1553 
+F G "strtok" 9 342 "*int8(*int8 s1,*int8 s2)" `1551 
+V L "beg" 9 343 "*int8" `1554 
+V L "end" 9 343 "*int8" `1555 
+V L "save" 9 344 "*int8" `1556 
 C L "stricmp" 9 19 6 "FUNCTION"
 F N "stricmp" 9 392 ""
-V L "s1" 9 392 "*int8" `1561 
-V L "s2" 9 392 "*int8" `1562 
-F G "stricmp" 9 393 "sint8(*int8 s1,*int8 s2)" `1560 
+V L "s1" 9 392 "*int8" `1558 
+V L "s2" 9 392 "*int8" `1559 
+F G "stricmp" 9 393 "sint8(*int8 s1,*int8 s2)" `1557 
 C L "strlwr" 9 19 3 "FUNCTION"
 F N "strlwr" 9 406 ""
-V L "s" 9 406 "*int8" `1566 
-F G "strlwr" 9 407 "*int8(*int8 s,*int8 s)" `1565 
-V L "p" 9 408 "*int8" `1567 
+V L "s" 9 406 "*int8" `1563 
+F G "strlwr" 9 407 "*int8(*int8 s)" `1562 
+V L "p" 9 408 "*int8" `1564 
 C L "strupr" 9 19 3 "FUNCTION"
 F N "strupr" 9 420 ""
-V L "s" 9 420 "*int8" `1569 
-F G "strupr" 9 421 "*int8(*int8 s)" `1568 
-V L "p" 9 422 "*int8" `1570 
+V L "s" 9 420 "*int8" `1566 
+F G "strupr" 9 421 "*int8(*int8 s)" `1565 
+V L "p" 9 422 "*int8" `1567 
 F N "div" 7 275 ""
-V L "numer" 7 275 "sint8" `1471 
-V L "denom" 7 275 "sint8" `1573 
-F G "div" 7 276 "div_t(sint8 numer,sint8 denom)" `1470 
-V L "val" 7 277 "div_t" `1571 
+V L "numer" 7 275 "sint8" `1468 
+V L "denom" 7 275 "sint8" `1570 
+F G "div" 7 276 "div_t(sint8 numer,sint8 denom)" `1467 
+V L "val" 7 277 "div_t" `1568 
 F N "ldiv" 7 283 ""
-V L "numer" 7 283 "sint16" `1474 
-V L "denom" 7 283 "sint16" `1580 
-F G "ldiv" 7 284 "ldiv_t(sint16 numer,sint16 denom)" `1473 
-V L "val" 7 285 "ldiv_t" `1578 
+V L "numer" 7 283 "sint16" `1471 
+V L "denom" 7 283 "sint16" `1577 
+F G "ldiv" 7 284 "ldiv_t(sint16 numer,sint16 denom)" `1470 
+V L "val" 7 285 "ldiv_t" `1575 
 F N "atoe" 7 362 ""
-V L "s" 7 362 "*int8" `1586 
-F G "atoe" 7 363 "float(*int8 s)" `1463 
-V L "pow10" 7 364 "float" `1585 
-V L "result" 7 365 "float" `1586 
-V L "sign" 7 366 "int8" `1587 
-V L "expsign" 7 367 "int8" `1588 
-V L "c" 7 368 "int8" `1589 
-V L "ptr" 7 369 "int8" `1590 
-V L "i" 7 370 "int8" `1591 
-V L "exp" 7 371 "float" `1592 
-V L "expcnt" 7 372 "int8" `1593 
+V L "s" 7 362 "*int8" `1583 
+F G "atoe" 7 363 "float(*int8 s)" `1460 
+V L "pow10" 7 364 "float" `1582 
+V L "result" 7 365 "float" `1583 
+V L "sign" 7 366 "int8" `1584 
+V L "expsign" 7 367 "int8" `1585 
+V L "c" 7 368 "int8" `1586 
+V L "ptr" 7 369 "int8" `1587 
+V L "i" 7 370 "int8" `1588 
+V L "exp" 7 371 "float" `1589 
+V L "expcnt" 7 372 "int8" `1590 
 C L "atoe" 7 398 1 "FUNCTION"
 F N "atoi" 7 430 ""
-V L "s" 7 430 "*int8" `1606 
-F G "atoi" 7 431 "sint8(*int8 s)" `1441 
-V L "result" 7 432 "sint8" `1605 
-V L "sign" 7 433 "int8" `1606 
-V L "base" 7 433 "int8" `1607 
-V L "index" 7 433 "int8" `1608 
-V L "c" 7 434 "int8" `1609 
+V L "s" 7 430 "*int8" `1603 
+F G "atoi" 7 431 "sint8(*int8 s)" `1438 
+V L "result" 7 432 "sint8" `1602 
+V L "sign" 7 433 "int8" `1603 
+V L "base" 7 433 "int8" `1604 
+V L "index" 7 433 "int8" `1605 
+V L "c" 7 434 "int8" `1606 
 C L "atoi" 7 398 1 "FUNCTION"
 C L "atoi" 7 398 1 "FUNCTION"
 C L "atoi" 7 398 1 "FUNCTION"
@@ -4358,148 +4356,148 @@ C L "atoi" 7 398 1 "FUNCTION"
 C L "atoi" 7 398 1 "FUNCTION"
 C L "atoi" 7 398 1 "FUNCTION"
 F N "atol" 7 499 ""
-V L "s" 7 499 "*int8" `1611 
-F G "atol" 7 500 "sint16(*int8 s)" `1449 
-V L "result" 7 501 "sint16" `1610 
-V L "sign" 7 502 "int8" `1611 
-V L "base" 7 502 "int8" `1612 
-V L "index" 7 502 "int8" `1613 
-V L "c" 7 503 "int8" `1614 
+V L "s" 7 499 "*int8" `1608 
+F G "atol" 7 500 "sint16(*int8 s)" `1446 
+V L "result" 7 501 "sint16" `1607 
+V L "sign" 7 502 "int8" `1608 
+V L "base" 7 502 "int8" `1609 
+V L "index" 7 502 "int8" `1610 
+V L "c" 7 503 "int8" `1611 
 C L "atol" 7 398 1 "FUNCTION"
 C L "atol" 7 398 1 "FUNCTION"
 C L "atol" 7 398 1 "FUNCTION"
 C L "atol" 7 398 1 "FUNCTION"
 C L "mult_with10" 7 398 1 "FUNCTION"
 F N "mult_with10" 7 566 ""
-V L "num" 7 566 "int32" `1616 
-F G "mult_with10" 7 567 "sint32(int32 num)" `1615 
+V L "num" 7 566 "int32" `1613 
+F G "mult_with10" 7 567 "sint32(int32 num)" `1612 
 F N "atoi32" 7 572 ""
-V L "s" 7 572 "*int8" `1618 
-F G "atoi32" 7 573 "sint32(*int8 s)" `1443 
-V L "result" 7 574 "sint32" `1617 
-V L "sign" 7 575 "int8" `1618 
-V L "base" 7 575 "int8" `1619 
-V L "index" 7 575 "int8" `1620 
-V L "c" 7 576 "int8" `1621 
+V L "s" 7 572 "*int8" `1615 
+F G "atoi32" 7 573 "sint32(*int8 s)" `1440 
+V L "result" 7 574 "sint32" `1614 
+V L "sign" 7 575 "int8" `1615 
+V L "base" 7 575 "int8" `1616 
+V L "index" 7 575 "int8" `1617 
+V L "c" 7 576 "int8" `1618 
 C L "atoi32" 7 398 1 "FUNCTION"
 C L "atoi32" 7 398 1 "FUNCTION"
 C L "atoi32" 7 398 1 "FUNCTION"
 C L "atoi32" 7 398 1 "FUNCTION"
 C L "atoi32" 7 398 1 "FUNCTION"
 F N "itoa" 7 771 ""
-V L "num" 7 771 "sint32" `1446 
-V L "base" 7 771 "int8" `1447 
-V L "s" 7 771 "*int8" `1625 
-F G "itoa" 7 772 "*int8(sint32 num,int8 base,*int8 s)" `1445 
-V L "temp" 7 773 "int32" `1622 
-V L "i" 7 774 "int8" `1623 
-V L "sign" 7 774 "int8" `1624 
-V L "cnt" 7 774 "int8" `1625 
-V L "c" 7 775 "int8" `1626 
+V L "num" 7 771 "sint32" `1443 
+V L "base" 7 771 "int8" `1444 
+V L "s" 7 771 "*int8" `1622 
+F G "itoa" 7 772 "*int8(sint32 num,int8 base,*int8 s)" `1442 
+V L "temp" 7 773 "int32" `1619 
+V L "i" 7 774 "int8" `1620 
+V L "sign" 7 774 "int8" `1621 
+V L "cnt" 7 774 "int8" `1622 
+V L "c" 7 775 "int8" `1623 
 C L "itoa" 7 398 1 "FUNCTION"
 C L "itoa" 7 398 1 "FUNCTION"
 C L "itoa" 7 398 1 "FUNCTION"
 C L "itoa" 7 398 1 "FUNCTION"
 C L "itoa" 7 398 1 "FUNCTION"
 F N "strtof" 7 886 ""
-V L "s" 7 886 "*int8" `1460 
-V L "endptr" 7 886 "??0 *" `1635 
-F G "strtof" 7 887 "float(*int8 s,??0 * endptr)" `1459 
-V L "pow10" 7 888 "float" `1633 
-V L "result" 7 889 "float" `1634 
-V L "skip" 7 890 "int1" `1635 
-V L "sign" 7 890 "int1" `1636 
-V L "point" 7 890 "int1" `1637 
-V L "c" 7 891 "int8" `1638 
-V L "ptr" 7 892 "int8" `1639 
+V L "s" 7 886 "*int8" `1457 
+V L "endptr" 7 886 "??0 *" `1632 
+F G "strtof" 7 887 "float(*int8 s,??0 * endptr)" `1456 
+V L "pow10" 7 888 "float" `1630 
+V L "result" 7 889 "float" `1631 
+V L "skip" 7 890 "int1" `1632 
+V L "sign" 7 890 "int1" `1633 
+V L "point" 7 890 "int1" `1634 
+V L "c" 7 891 "int8" `1635 
+V L "ptr" 7 892 "int8" `1636 
 F N "strtoul" 7 1105 ""
-V L "s" 7 1105 "*int8" `1456 
-V L "endptr" 7 1105 "*int8" `1457 
-V L "base" 7 1105 "sint8" `1644 
-F G "strtoul" 7 1106 "int16(*int8 s,*int8 endptr,sint8 base)" `1455 
-V L "sc" 7 1107 "*int8" `1641 
-V L "s1" 7 1107 "*int8" `1642 
-V L "sd" 7 1107 "*int8" `1643 
-V L "x" 7 1108 "int16" `1644 
-V L "sign" 7 1109 "int8" `1645 
-V L "digits" 7 1110 "int8[1]" `1646 
+V L "s" 7 1105 "*int8" `1453 
+V L "endptr" 7 1105 "*int8" `1454 
+V L "base" 7 1105 "sint8" `1641 
+F G "strtoul" 7 1106 "int16(*int8 s,*int8 endptr,sint8 base)" `1452 
+V L "sc" 7 1107 "*int8" `1638 
+V L "s1" 7 1107 "*int8" `1639 
+V L "sd" 7 1107 "*int8" `1640 
+V L "x" 7 1108 "int16" `1641 
+V L "sign" 7 1109 "int8" `1642 
+V L "digits" 7 1110 "int8[1]" `1643 
 C L "strtoul" 7 398 1 "FUNCTION"
 C L "strtoul" 7 398 1 "FUNCTION"
 C L "strtoul" 7 398 1 "FUNCTION"
 F N "strtol" 7 1167 ""
-V L "s" 7 1167 "*int8" `1452 
-V L "endptr" 7 1167 "*int8" `1453 
-V L "base" 7 1167 "sint8" `1651 
-F G "strtol" 7 1168 "sint16(*int8 s,*int8 endptr,sint8 base)" `1451 
-V L "sc" 7 1169 "*int8" `1648 
-V L "s1" 7 1169 "*int8" `1649 
-V L "sd" 7 1169 "*int8" `1650 
-V L "x" 7 1170 "sint16" `1651 
-V L "sign" 7 1171 "int8" `1652 
-V L "digits" 7 1172 "int8[1]" `1653 
+V L "s" 7 1167 "*int8" `1449 
+V L "endptr" 7 1167 "*int8" `1450 
+V L "base" 7 1167 "sint8" `1648 
+F G "strtol" 7 1168 "sint16(*int8 s,*int8 endptr,sint8 base)" `1448 
+V L "sc" 7 1169 "*int8" `1645 
+V L "s1" 7 1169 "*int8" `1646 
+V L "sd" 7 1169 "*int8" `1647 
+V L "x" 7 1170 "sint16" `1648 
+V L "sign" 7 1171 "int8" `1649 
+V L "digits" 7 1172 "int8[1]" `1650 
 C L "strtol" 7 398 1 "FUNCTION"
 C L "strtol" 7 398 1 "FUNCTION"
 C L "strtol" 7 398 1 "FUNCTION"
 F N "system" 7 1231 ""
-V L "string" 7 1231 "*int8" `1656 
-F G "system" 7 1232 "sint8(*int8 string)" `1468 
+V L "string" 7 1231 "*int8" `1653 
+F G "system" 7 1232 "sint8(*int8 string)" `1465 
 F N "mblen" 7 1236 ""
-V L "s" 7 1236 "*int8" `1656 
-V L "n" 7 1236 "int16" `1657 
-F G "mblen" 7 1237 "int16(*int8 s,int16 n,*int8 s,int16 n)" `1655 
+V L "s" 7 1236 "*int8" `1653 
+V L "n" 7 1236 "int16" `1654 
+F G "mblen" 7 1237 "int16(*int8 s,int16 n)" `1652 
 F N "mbtowc" 7 1241 ""
-V L "pwc" 7 1241 "*int8" `1659 
-V L "s" 7 1241 "*int8" `1660 
-V L "n" 7 1241 "int16" `1661 
-F G "mbtowc" 7 1242 "int8(*int8 pwc,*int8 s,int16 n,int8 wchar)" `1658 
+V L "pwc" 7 1241 "*int8" `1656 
+V L "s" 7 1241 "*int8" `1657 
+V L "n" 7 1241 "int16" `1658 
+F G "mbtowc" 7 1242 "int8(*int8 pwc,*int8 s,int16 n)" `1655 
 F N "wctomb" 7 1247 ""
-V L "s" 7 1247 "*int8" `1663 
-V L "wchar" 7 1247 "int8" `1664 
-F G "wctomb" 7 1248 "int8(*int8 s,int8 wchar,*int8 s,int16 n)" `1662 
+V L "s" 7 1247 "*int8" `1660 
+V L "wchar" 7 1247 "int8" `1661 
+F G "wctomb" 7 1248 "int8(*int8 s,int8 wchar)" `1659 
 F N "mbstowcs" 7 1253 ""
-V L "pwcs" 7 1253 "*int8" `1666 
-V L "s" 7 1253 "*int8" `1667 
-V L "n" 7 1253 "int16" `1668 
-F G "mbstowcs" 7 1254 "int16(*int8 pwcs,*int8 s,int16 n,*int8 pwcs,int16 n)" `1665 
+V L "pwcs" 7 1253 "*int8" `1663 
+V L "s" 7 1253 "*int8" `1664 
+V L "n" 7 1253 "int16" `1665 
+F G "mbstowcs" 7 1254 "int16(*int8 pwcs,*int8 s,int16 n)" `1662 
 F N "wcstombs" 7 1259 ""
-V L "s" 7 1259 "*int8" `1670 
-V L "pwcs" 7 1259 "*int8" `1671 
-V L "n" 7 1259 "int16" `1672 
-F G "wcstombs" 7 1260 "int16(*int8 s,*int8 pwcs,int16 n,int16 ,int16 )" `1669 
-V G "_Randseed" 7 1269 "int32" `1673 
+V L "s" 7 1259 "*int8" `1667 
+V L "pwcs" 7 1259 "*int8" `1668 
+V L "n" 7 1259 "int16" `1669 
+F G "wcstombs" 7 1260 "int16(*int8 s,*int8 pwcs,int16 n)" `1666 
+V G "_Randseed" 7 1269 "int32" `1670 
 F N "rand" 7 1271 ""
-F G "rand" 7 1272 "int16()" `1465 
+F G "rand" 7 1272 "int16()" `1462 
 F N "srand" 7 1277 ""
-V L "seed" 7 1277 "int32" `1678 
-F G "srand" 7 1278 "void(int32 seed)" `1466 
+V L "seed" 7 1277 "int32" `1675 
+F G "srand" 7 1278 "void(int32 seed)" `1463 
 F N "*_Cmpfun" 7 1287 ""
-V L "p1" 7 1287 "*int8" `1678 
-V L "p2" 7 1287 "*int8" `1679 
-T G "*_Cmpfun" 7 1287 "sint8(*int8 p1,*int8 p2,*int8 qdata,int8 qitems,int8 qsize,p1 cmp)" `1677 
+V L "p1" 7 1287 "*int8" `1675 
+V L "p2" 7 1287 "*int8" `1676 
+T G "*_Cmpfun" 7 1287 "sint8(*int8 p1,*int8 p2)" `1674 
 F N "qsort" 7 1294 ""
-V L "qdata" 7 1294 "*int8" `1682 
-V L "qitems" 7 1294 "int8" `1683 
-V L "qsize" 7 1294 "int8" `1684 
-V L "cmp" 7 1294 "_Cmpfun" `1685 
-F G "qsort" 7 1294 "void(*int8 qdata,int8 qitems,int8 qsize,_Cmpfun cmp)" `1681 
-V L "m" 7 1295 "int8" `1686 
-V L "j" 7 1295 "int8" `1687 
-V L "i" 7 1295 "int8" `1688 
-V L "l" 7 1295 "int8" `1689 
-V L "done" 7 1296 "int1" `1690 
-V L "t" 7 1297 "int8[16]" `1691 
+V L "qdata" 7 1294 "*int8" `1679 
+V L "qitems" 7 1294 "int8" `1680 
+V L "qsize" 7 1294 "int8" `1681 
+V L "cmp" 7 1294 "_Cmpfun" `1682 
+F G "qsort" 7 1294 "void(*int8 qdata,int8 qitems,int8 qsize,_Cmpfun cmp)" `1678 
+V L "m" 7 1295 "int8" `1683 
+V L "j" 7 1295 "int8" `1684 
+V L "i" 7 1295 "int8" `1685 
+V L "l" 7 1295 "int8" `1686 
+V L "done" 7 1296 "int1" `1687 
+V L "t" 7 1297 "int8[16]" `1688 
 F N "bsearch" 7 1322 ""
-V L "key" 7 1322 "*int8" `1694 
-V L "base" 7 1322 "*int8" `1695 
-V L "num" 7 1322 "int16" `1696 
-V L "width" 7 1322 "int16" `1697 
-V L "cmp" 7 1322 "_Cmpfun" `1698 
-F G "bsearch" 7 1323 "*int8(*int8 key,*int8 base,int16 num,int16 width,_Cmpfun cmp)" `1693 
-V L "p" 7 1324 "*int8" `1699 
-V L "q" 7 1324 "*int8" `1700 
-V L "n" 7 1325 "int16" `1701 
-V L "pivot" 7 1326 "int16" `1702 
-V L "val" 7 1327 "sint8" `1703 
+V L "key" 7 1322 "*int8" `1691 
+V L "base" 7 1322 "*int8" `1692 
+V L "num" 7 1322 "int16" `1693 
+V L "width" 7 1322 "int16" `1694 
+V L "cmp" 7 1322 "_Cmpfun" `1695 
+F G "bsearch" 7 1323 "*int8(*int8 key,*int8 base,int16 num,int16 width,_Cmpfun cmp)" `1690 
+V L "p" 7 1324 "*int8" `1696 
+V L "q" 7 1324 "*int8" `1697 
+V L "n" 7 1325 "int16" `1698 
+V L "pivot" 7 1326 "int16" `1699 
+V L "val" 7 1327 "sint8" `1700 
 C L "bsearch" 7 398 1 "FUNCTION"
 D G "CLI_TOKEN_NPOS" 6 6 "0xffff"
 D G "UNUSED" 6 9 "(x) (void)x"
@@ -4520,10 +4518,10 @@ D G "CLI_FLAG_ESCAPE_MODE" 6 49 "0x08u"
 C G "" 6 51 1 "*"
 D G "CLI_FLAG_DIRECT_PRINT" 6 55 "0x10u"
 D G "CLI_FLAG_AUTOCOMPLETE_ENABLED" 6 60 "0x20u"
-T G "EmbeddedCliImpl" 6 62 "int8" `1707 
-T G "AutocompletedCommand" 6 63 "int8" `1708 
-T G "FifoBuf" 6 64 "int8" `1709 
-T G "CliHistory" 6 65 "int8" `1710 
+T G "EmbeddedCliImpl" 6 62 "int8" `1704 
+T G "AutocompletedCommand" 6 63 "int8" `1705 
+T G "FifoBuf" 6 64 "int8" `1706 
+T G "CliHistory" 6 65 "int8" `1707 
 C G "" 6 69 1 "*"
 C G "" 6 73 1 "*"
 C G "" 6 77 1 "*"
@@ -4543,13 +4541,13 @@ C G "" 6 128 1 "*"
 C G "" 6 133 1 "*"
 F N "bindings" 6 138 ""
 C L "bindings" 6 140 1 "*"
-V G "bindingsFlags" 6 143 "??0 *" `1728 
-V G "bindingsCount" 6 145 "uint16_t" `1729 
-V G "maxBindingsCount" 6 147 "uint16_t" `1730  "* Total length of input line. This doesn't include invitation but"
+V G "bindingsFlags" 6 143 "??0 *" `1725 
+V G "bindingsCount" 6 145 "uint16_t" `1726 
+V G "maxBindingsCount" 6 147 "uint16_t" `1727  "* Total length of input line. This doesn't include invitation but"
 C L "bindings" 6 149 1 "*"
-V G "inputLineLength" 6 153 "uint16_t" `1731  "* Stores last character that was processed."
-V G "lastChar" 6 158 "int8" `1732  "* Flags are defined as CLI_FLAG_*"
-V G "flags" 6 163 "uint8_t" `1733 
+V G "inputLineLength" 6 153 "uint16_t" `1728  "* Stores last character that was processed."
+V G "lastChar" 6 158 "int8" `1729  "* Flags are defined as CLI_FLAG_*"
+V G "flags" 6 163 "uint8_t" `1730 
 C L "bindings" 6 167 1 "*"
 C L "bindings" 6 167 1 "*"
 C L "bindings" 6 167 1 "*"
@@ -4558,152 +4556,152 @@ C L "bindings" 6 174 1 "*"
 C L "bindings" 6 174 1 "*"
 C L "bindings" 6 174 1 "*"
 C L "bindings" 6 182 1 "*"
-V G "defaultConfig" 6 188 "EmbeddedCliConfig" `1738  "* Number of commands that cli adds. Commands:"
+V G "defaultConfig" 6 188 "EmbeddedCliConfig" `1735  "* Number of commands that cli adds. Commands:"
 C L "bindings" 6 190 1 "*"
-V G "cliInternalBindingCount" 6 194 "uint16_t" `1739 
-V G "lineBreak" 6 196 "*int8" `1740 
+V G "cliInternalBindingCount" 6 194 "uint16_t" `1736 
+V G "lineBreak" 6 196 "*int8" `1737 
 C L "bindings" 6 198 1 "*"
 C L "bindings" 6 198 1 "*"
 C L "bindings" 6 198 1 "*"
 C L "bindings" 6 198 1 "*"
 C L "bindings" 6 198 1 "*"
 F N "navigateHistory" 6 205 ""
-V L "EmbeddedCli" 6 205 "int8" `1743 
-f G "navigateHistory" 6 205 "void(int8 EmbeddedCli)" `1742 
+V L "EmbeddedCli" 6 205 "int8" `1740 
+f G "navigateHistory" 6 205 "void(int8 EmbeddedCli)" `1739 
 F N "cli" 6 205 ""
-V G "navigateUp" 6 205 "bool" `1744  "* Process escaped character. After receiving ESC+[ sequence, all chars up to"
+V G "navigateUp" 6 205 "bool" `1741  "* Process escaped character. After receiving ESC+[ sequence, all chars up to"
 C L "cli" 6 207 1 "*"
 C L "cli" 6 207 1 "*"
 C L "cli" 6 207 1 "*"
 F N "onEscapedInput" 6 213 ""
-V L "EmbeddedCli" 6 213 "int8" `1746 
-f G "onEscapedInput" 6 213 "void(int8 EmbeddedCli,int8 args)" `1745 
+V L "EmbeddedCli" 6 213 "int8" `1743 
+f G "onEscapedInput" 6 213 "void(int8 EmbeddedCli)" `1742 
 F N "cli" 6 213 ""
-V L "EmbeddedCli" 6 213 "int8" `1746  "* Process input character. Character is valid displayable char and should be"
+V L "EmbeddedCli" 6 213 "int8" `1743  "* Process input character. Character is valid displayable char and should be"
 C L "cli" 6 215 1 "*"
 C L "cli" 6 215 1 "*"
 C L "cli" 6 215 1 "*"
 F N "onCharInput" 6 221 ""
-V L "EmbeddedCli" 6 221 "int8" `1748 
-f G "onCharInput" 6 221 "void(int8 EmbeddedCli,int8 args)" `1747 
+V L "EmbeddedCli" 6 221 "int8" `1745 
+f G "onCharInput" 6 221 "void(int8 EmbeddedCli)" `1744 
 F N "cli" 6 221 ""
-V L "EmbeddedCli" 6 221 "int8" `1748  "* Process control character (like \r or \n) possibly altering state of current"
+V L "EmbeddedCli" 6 221 "int8" `1745  "* Process control character (like \r or \n) possibly altering state of current"
 C L "cli" 6 223 1 "*"
 C L "cli" 6 223 1 "*"
 C L "cli" 6 223 1 "*"
 F N "onControlInput" 6 229 ""
-V L "EmbeddedCli" 6 229 "int8" `1750 
-f G "onControlInput" 6 229 "void(int8 EmbeddedCli,int8 args)" `1749 
+V L "EmbeddedCli" 6 229 "int8" `1747 
+f G "onControlInput" 6 229 "void(int8 EmbeddedCli)" `1746 
 F N "cli" 6 229 ""
-V L "EmbeddedCli" 6 229 "int8" `1750  "* Parse command in buffer and execute callback"
+V L "EmbeddedCli" 6 229 "int8" `1747  "* Parse command in buffer and execute callback"
 C L "cli" 6 231 1 "*"
 F N "parseCommand" 6 235 ""
-V L "EmbeddedCli" 6 235 "int8" `1752 
-f G "parseCommand" 6 235 "void(int8 EmbeddedCli,int8 args)" `1751 
+V L "EmbeddedCli" 6 235 "int8" `1749 
+f G "parseCommand" 6 235 "void(int8 EmbeddedCli)" `1748 
 F N "cli" 6 235 ""
 C L "cli" 6 237 1 "*"
 C L "cli" 6 237 1 "*"
 F N "printBindingHelp" 6 241 ""
-V L "EmbeddedCli" 6 241 "int8" `1754 
-f G "printBindingHelp" 6 241 "void(int8 EmbeddedCli,int8 args)" `1753 
+V L "EmbeddedCli" 6 241 "int8" `1751 
+f G "printBindingHelp" 6 241 "void(int8 EmbeddedCli)" `1750 
 F N "cli" 6 241 ""
 F N "CliCommandBinding" 6 241 ""
 C L "CliCommandBinding" 6 243 1 "*"
 C L "CliCommandBinding" 6 243 1 "*"
 F N "initInternalBindings" 6 247 ""
-V L "EmbeddedCli" 6 247 "int8" `1756 
-f G "initInternalBindings" 6 247 "void(int8 EmbeddedCli)" `1755 
+V L "EmbeddedCli" 6 247 "int8" `1753 
+f G "initInternalBindings" 6 247 "void(int8 EmbeddedCli)" `1752 
 F N "cli" 6 247 ""
 C L "cli" 6 249 1 "*"
 C L "cli" 6 249 1 "*"
 C L "cli" 6 249 1 "*"
 C L "cli" 6 249 1 "*"
 F N "onHelp" 6 255 ""
-V L "EmbeddedCli" 6 255 "int8" `1758 
-f G "onHelp" 6 255 "void(int8 EmbeddedCli)" `1757 
+V L "EmbeddedCli" 6 255 "int8" `1755 
+f G "onHelp" 6 255 "void(int8 EmbeddedCli)" `1754 
 F N "cli" 6 255 ""
-V G "tokens" 6 255 "*int8" `1759 
-V G "tokens" 6 255 "*int8" `1759 
+V G "tokens" 6 255 "*int8" `1756 
+V G "tokens" 6 255 "*int8" `1756 
 F N "context" 6 255 ""
 C L "context" 6 257 1 "*"
 C L "context" 6 257 1 "*"
 C L "context" 6 257 1 "*"
 F N "onUnknownCommand" 6 262 ""
-V L "EmbeddedCli" 6 262 "int8" `1761 
-f G "onUnknownCommand" 6 262 "void(int8 EmbeddedCli)" `1760 
+V L "EmbeddedCli" 6 262 "int8" `1758 
+f G "onUnknownCommand" 6 262 "void(int8 EmbeddedCli)" `1757 
 F N "cli" 6 262 ""
-V G "name" 6 262 "*int8" `1762  "* Return autocompleted command for given prefix."
+V G "name" 6 262 "*int8" `1759  "* Return autocompleted command for given prefix."
 C L "cli" 6 264 1 "*"
 C L "cli" 6 264 1 "*"
 C L "cli" 6 264 1 "*"
 C L "cli" 6 264 1 "*"
 C L "cli" 6 264 1 "*"
 F N "getAutocompletedCommand" 6 272 ""
-V L "EmbeddedCli" 6 272 "int8" `1764 
-f G "getAutocompletedCommand" 6 272 "AutocompletedCommand(int8 EmbeddedCli)" `1763 
+V L "EmbeddedCli" 6 272 "int8" `1761 
+f G "getAutocompletedCommand" 6 272 "AutocompletedCommand(int8 EmbeddedCli)" `1760 
 F N "cli" 6 272 ""
-V G "prefix" 6 272 "*int8" `1765  "* Prints autocompletion result while keeping current command unchanged"
+V G "prefix" 6 272 "*int8" `1762  "* Prints autocompletion result while keeping current command unchanged"
 C L "cli" 6 274 1 "*"
 C L "cli" 6 274 1 "*"
 F N "printLiveAutocompletion" 6 279 ""
-V L "EmbeddedCli" 6 279 "int8" `1767 
-f G "printLiveAutocompletion" 6 279 "void(int8 EmbeddedCli,int8 args)" `1766 
+V L "EmbeddedCli" 6 279 "int8" `1764 
+f G "printLiveAutocompletion" 6 279 "void(int8 EmbeddedCli)" `1763 
 F N "cli" 6 279 ""
 C L "cli" 6 281 1 "*"
 C L "cli" 6 281 1 "*"
 C L "cli" 6 281 1 "*"
 C L "cli" 6 281 1 "*"
 F N "onAutocompleteRequest" 6 287 ""
-V L "EmbeddedCli" 6 287 "int8" `1769 
-f G "onAutocompleteRequest" 6 287 "void(int8 EmbeddedCli,int8 args)" `1768 
+V L "EmbeddedCli" 6 287 "int8" `1766 
+f G "onAutocompleteRequest" 6 287 "void(int8 EmbeddedCli)" `1765 
 F N "cli" 6 287 ""
 C L "cli" 6 289 1 "*"
 C L "cli" 6 289 1 "*"
 C L "cli" 6 289 1 "*"
 F N "clearCurrentLine" 6 294 ""
-V L "EmbeddedCli" 6 294 "int8" `1771 
-f G "clearCurrentLine" 6 294 "void(int8 EmbeddedCli)" `1770 
+V L "EmbeddedCli" 6 294 "int8" `1768 
+f G "clearCurrentLine" 6 294 "void(int8 EmbeddedCli)" `1767 
 F N "cli" 6 294 ""
 C L "cli" 6 296 1 "*"
 C L "cli" 6 296 1 "*"
 C L "cli" 6 296 1 "*"
 F N "writeToOutput" 6 301 ""
-V L "EmbeddedCli" 6 301 "int8" `1773 
-f G "writeToOutput" 6 301 "void(int8 EmbeddedCli)" `1772 
+V L "EmbeddedCli" 6 301 "int8" `1770 
+f G "writeToOutput" 6 301 "void(int8 EmbeddedCli)" `1769 
 F N "cli" 6 301 ""
-V G "str" 6 301 "*int8" `1774  "* Returns true if provided char is a supported control char:"
+V G "str" 6 301 "*int8" `1771  "* Returns true if provided char is a supported control char:"
 C L "cli" 6 303 1 "*"
 C L "cli" 6 303 1 "*"
 C L "cli" 6 303 1 "*"
 F N "isControlChar" 6 309 ""
-V L "c" 6 309 "int8" `1776 
-f G "isControlChar" 6 309 "int8(int8 c,??0 * buffer)" `1775  "* Returns true if provided char is a valid displayable character:"
+V L "c" 6 309 "int8" `1773 
+f G "isControlChar" 6 309 "int8(int8 c)" `1772  "* Returns true if provided char is a valid displayable character:"
 C L "isControlChar" 6 311 1 "*"
 C L "isControlChar" 6 311 1 "*"
 C L "isControlChar" 6 311 1 "*"
 C L "isControlChar" 6 311 1 "*"
 F N "isDisplayableChar" 6 318 ""
-V L "c" 6 318 "int8" `1778 
-f G "isDisplayableChar" 6 318 "int8(int8 c,??0 * buffer)" `1777  "* How many elements are currently available in buffer"
+V L "c" 6 318 "int8" `1775 
+f G "isDisplayableChar" 6 318 "int8(int8 c)" `1774  "* How many elements are currently available in buffer"
 C L "isDisplayableChar" 6 320 1 "*"
 C L "isDisplayableChar" 6 320 1 "*"
 F N "fifoBufAvailable" 6 325 ""
-V L "buffer" 6 325 "??0 *" `1780 
-f G "fifoBufAvailable" 6 325 "uint16_t(??0 * buffer,??0 * buffer,int8 a)" `1779  "* Return first character from buffer and remove it from buffer"
+V L "buffer" 6 325 "??0 *" `1777 
+f G "fifoBufAvailable" 6 325 "uint16_t(??0 * buffer)" `1776  "* Return first character from buffer and remove it from buffer"
 C L "fifoBufAvailable" 6 327 1 "*"
 C L "fifoBufAvailable" 6 327 1 "*"
 C L "fifoBufAvailable" 6 327 1 "*"
 F N "fifoBufPop" 6 333 ""
-V L "buffer" 6 333 "??0 *" `1782 
-f G "fifoBufPop" 6 333 "int8(??0 * buffer)" `1781  "* Push character into fifo buffer. If there is no space left, character is"
+V L "buffer" 6 333 "??0 *" `1779 
+f G "fifoBufPop" 6 333 "int8(??0 * buffer)" `1778  "* Push character into fifo buffer. If there is no space left, character is"
 C L "fifoBufPop" 6 335 1 "*"
 C L "fifoBufPop" 6 335 1 "*"
 C L "fifoBufPop" 6 335 1 "*"
 C L "fifoBufPop" 6 335 1 "*"
 F N "fifoBufPush" 6 342 ""
-V L "buffer" 6 342 "??0 *" `1784 
-V L "a" 6 342 "int8" `1785 
-f G "fifoBufPush" 6 342 "int8(??0 * buffer,int8 a)" `1783  "* Copy provided string to the history buffer."
+V L "buffer" 6 342 "??0 *" `1781 
+V L "a" 6 342 "int8" `1782 
+f G "fifoBufPush" 6 342 "int8(??0 * buffer,int8 a)" `1780  "* Copy provided string to the history buffer."
 C L "fifoBufPush" 6 344 1 "*"
 C L "fifoBufPush" 6 344 1 "*"
 C L "fifoBufPush" 6 344 1 "*"
@@ -4712,48 +4710,48 @@ C L "fifoBufPush" 6 344 1 "*"
 C L "fifoBufPush" 6 344 1 "*"
 C L "fifoBufPush" 6 344 1 "*"
 F N "historyPut" 6 354 ""
-V L "history" 6 354 "??0 *" `1787 
-V L "str" 6 354 "*int8" `1788 
-f G "historyPut" 6 354 "int8(??0 * history,*int8 str)" `1786  "* Get item from history. Items are counted from 1 so if item is 0 or greater"
+V L "history" 6 354 "??0 *" `1784 
+V L "str" 6 354 "*int8" `1785 
+f G "historyPut" 6 354 "int8(??0 * history,*int8 str)" `1783  "* Get item from history. Items are counted from 1 so if item is 0 or greater"
 C L "historyPut" 6 356 1 "*"
 C L "historyPut" 6 356 1 "*"
 C L "historyPut" 6 356 1 "*"
 C L "historyPut" 6 356 1 "*"
 F N "historyGet" 6 363 ""
-V L "history" 6 363 "??0 *" `1790 
-V L "item" 6 363 "uint16_t" `1791 
-f G "historyGet" 6 363 "*int8(??0 * history,uint16_t item)" `1789  "* Remove specific item from history"
+V L "history" 6 363 "??0 *" `1787 
+V L "item" 6 363 "uint16_t" `1788 
+f G "historyGet" 6 363 "*int8(??0 * history,uint16_t item)" `1786  "* Remove specific item from history"
 C L "historyGet" 6 365 1 "*"
 C L "historyGet" 6 365 1 "*"
 C L "historyGet" 6 365 1 "*"
 F N "historyRemove" 6 371 ""
-V L "history" 6 371 "??0 *" `1793 
-V L "str" 6 371 "*int8" `1794 
-f G "historyRemove" 6 371 "void(??0 * history,*int8 str)" `1792  "* Return position (index of first char) of specified token"
+V L "history" 6 371 "??0 *" `1790 
+V L "str" 6 371 "*int8" `1791 
+f G "historyRemove" 6 371 "void(??0 * history,*int8 str)" `1789  "* Return position (index of first char) of specified token"
 C L "historyRemove" 6 373 1 "*"
 C L "historyRemove" 6 373 1 "*"
 C L "historyRemove" 6 373 1 "*"
 C L "historyRemove" 6 373 1 "*"
 F N "getTokenPosition" 6 380 ""
-V L "tokenizedStr" 6 380 "*int8" `1796 
-V L "pos" 6 380 "uint16_t" `1797 
-f G "getTokenPosition" 6 380 "uint16_t(*int8 tokenizedStr,uint16_t pos)" `1795 
+V L "tokenizedStr" 6 380 "*int8" `1793 
+V L "pos" 6 380 "uint16_t" `1794 
+f G "getTokenPosition" 6 380 "uint16_t(*int8 tokenizedStr,uint16_t pos)" `1792 
 F N "embeddedCliDefaultConfig" 6 382 ""
-F G "embeddedCliDefaultConfig" 6 382 "EmbeddedCliConfig *()" `1400 
+F G "embeddedCliDefaultConfig" 6 382 "EmbeddedCliConfig *()" `1397 
 F N "embeddedCliRequiredSize" 6 394 ""
-V L "config" 6 394 "EmbeddedCliConfig *" `1800 
-F G "embeddedCliRequiredSize" 6 394 "uint16_t(EmbeddedCliConfig * config)" `1401 
-V L "bindingCount" 6 395 "uint16_t" `1799 
+V L "config" 6 394 "EmbeddedCliConfig *" `1797 
+F G "embeddedCliRequiredSize" 6 394 "uint16_t(EmbeddedCliConfig * config)" `1398 
+V L "bindingCount" 6 395 "uint16_t" `1796 
 F N "EmbeddedCli" 6 406 ""
 F N "embeddedCliNew" 6 406 ""
-V L "config" 6 406 "EmbeddedCliConfig *" `1801 
-F G "embeddedCliNew" 6 406 "int8(EmbeddedCliConfig * config)" `1403 
-V L "bindingCount" 6 409 "uint16_t" `1800 
-V L "totalSize" 6 411 "int16" `1801 
-V L "allocated" 6 413 "bool" `1802 
+V L "config" 6 406 "EmbeddedCliConfig *" `1798 
+F G "embeddedCliNew" 6 406 "int8(EmbeddedCliConfig * config)" `1400 
+V L "bindingCount" 6 409 "uint16_t" `1797 
+V L "totalSize" 6 411 "int16" `1798 
+V L "allocated" 6 413 "bool" `1799 
 C L "embeddedCliNew" 6 373 1 "FUNCTION"
-V L "buf" 6 423 "??0 *" `1803 
-V L "impl" 6 433 "??0 *" `1808 
+V L "buf" 6 423 "??0 *" `1800 
+V L "impl" 6 433 "??0 *" `1805 
 F B "reset_cpu" 0 0
 F B "abs" 1 0
 F B "sleep" 0 1

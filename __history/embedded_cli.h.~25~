@@ -70,9 +70,8 @@ typedef struct EmbeddedCli {
      * @param cli     - pointer to cli that executed this function
      * @param command - pointer to received command
      */
-    // ORIG -- void (*onCommand)(EmbeddedCli *cli, CliCommand *command);
     void (*onCommand)(EmbeddedCli *cli, CliCommand *command);
-    
+
     /**
      * Can be used for any application context
      */
