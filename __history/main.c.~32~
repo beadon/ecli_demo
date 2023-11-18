@@ -12,18 +12,11 @@ void writeChar(EmbeddedCli *embeddedCli, char c)
   
 }
 
-void onCommand(EmbeddedCli *embeddedCli, CliCommand *command)
-{
-    // your implementation
-
-}
-
 void main()
 {
 
    EmbeddedCliConfig *config = embeddedCliDefaultConfig();
    config->maxBindingCount = 16;
-   cli->onCommand = onCommand;
    cli->writeChar = writeChar;
 
    while(TRUE)

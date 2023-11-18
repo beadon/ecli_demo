@@ -3,6 +3,9 @@
 #define EMBEDDED_CLI_IMPL
 #include "embedded_cli.h"
 
+// compiler won't find the .c unless added here
+#include "embedded_cli.c"
+
 EmbeddedCli *cli = embeddedCliNewDefault();
 
 void writeChar(EmbeddedCli *embeddedCli, char c)
@@ -12,18 +15,11 @@ void writeChar(EmbeddedCli *embeddedCli, char c)
   
 }
 
-void onCommand(EmbeddedCli *embeddedCli, CliCommand *command)
-{
-    // your implementation
-
-}
-
 void main()
 {
 
    EmbeddedCliConfig *config = embeddedCliDefaultConfig();
    config->maxBindingCount = 16;
-   cli->onCommand = onCommand;
    cli->writeChar = writeChar;
 
    while(TRUE)

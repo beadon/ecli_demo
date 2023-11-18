@@ -730,8 +730,6 @@ static void historyRemove(CliHistory *history, char *str);
  */
 static uint16_t getTokenPosition(char *tokenizedStr, uint16_t pos);
 
-static char defaultInvitation[] = "> ";
-
 EmbeddedCliConfig *embeddedCliDefaultConfig(void) {
     defaultConfig.rxBufferSize = 64;
     defaultConfig.cmdBufferSize = 64;
@@ -740,7 +738,7 @@ EmbeddedCliConfig *embeddedCliDefaultConfig(void) {
     defaultConfig.cliBufferSize = 0;
     defaultConfig.maxBindingCount = 8;
     defaultConfig.enableAutoComplete = true;
-    defaultConfig.invitation = defaultInvitation;
+    defaultConfig.invitation = "> ";
     return &defaultConfig;
 }
 

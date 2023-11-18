@@ -10,7 +10,7 @@
 // required for eCLI.
 
 #ifndef UINTPTR_MAX
-#define UINTPTR_MAX 0xFFFF
+#define UINTPTR_MAX 0xFF
 #endif
 
 #include "embedded_cli.h"
