@@ -1,0 +1,159 @@
+ÀÄmain
+   ÃÄMAIN  0/258  Ram=4
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ³  ÀÄembeddedCliNewDefault  0/26  Ram=2
+   ³  ³     ÃÄembeddedCliDefaultConfig  0/50  Ram=0
+   ³  ³     ÀÄembeddedCliNew  0/1006  Ram=17
+   ³  ³        ÃÄembeddedCliRequiredSize  0/320  Ram=8
+   ³  ³        ³  ÀÄ@MUL1616  0/34  Ram=5
+   ³  ³        ÃÄ@MEMSET  0/28  Ram=0
+   ³  ³        ÃÄ@MUL1616  0/34  Ram=5
+   ³  ³        ÀÄinitInternalBindings  0/204  Ram=41
+   ³  ³           ÀÄembeddedCliAddBinding  0/204  Ram=19
+   ³  ³              ÀÄ@MUL1616  0/34  Ram=5
+   ³  ÃÄ@cinit2  (Inline)  Ram=0
+   ³  ÃÄembeddedCliDefaultConfig  0/50  Ram=0
+   ³  ÀÄembeddedCliProcess  0/474  Ram=11
+   ³     ÃÄwriteToOutput  0/100  Ram=11
+   ³     ³  ÃÄstrlen  0/56  Ram=5
+   ³     ³  ÀÄwriteChar  0/2  Ram=3
+   ³     ÃÄfifoBufAvailable  0/204  Ram=4
+   ³     ÃÄfifoBufPop  0/224  Ram=9
+   ³     ³  ÀÄ@DIV1616  0/68  Ram=5
+   ³     ÃÄonEscapedInput  0/94  Ram=8
+   ³     ³  ÀÄnavigateHistory  0/552  Ram=13
+   ³     ³     ÃÄclearCurrentLine  0/224  Ram=12
+   ³     ³     ³  ÃÄstrlen  0/56  Ram=5
+   ³     ³     ³  ÃÄwriteChar  0/2  Ram=3
+   ³     ³     ³  ÃÄwriteChar  0/2  Ram=3
+   ³     ³     ³  ÀÄwriteChar  0/2  Ram=3
+   ³     ³     ÃÄwriteToOutput  0/100  Ram=11
+   ³     ³     ³  ÀÄ*
+   ³     ³     ÃÄhistoryGet  0/92  Ram=6
+   ³     ³     ³  ÀÄembeddedCliGetToken  0/66  Ram=6
+   ³     ³     ³     ÀÄgetTokenPosition  0/148  Ram=11
+   ³     ³     ÃÄstrlen  0/56  Ram=5
+   ³     ³     ÃÄwriteToOutput  0/100  Ram=11
+   ³     ³     ³  ÀÄ*
+   ³     ³     ÀÄprintLiveAutocompletion  0/436  Ram=17
+   ³     ³        ÃÄgetAutocompletedCommand  0/562  Ram=29
+   ³     ³        ³  ÃÄstrlen  0/56  Ram=5
+   ³     ³        ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³     ³        ³  ÀÄstrlen  0/56  Ram=5
+   ³     ³        ÃÄwriteChar  0/2  Ram=3
+   ³     ³        ÃÄwriteChar  0/2  Ram=3
+   ³     ³        ÃÄwriteChar  0/2  Ram=3
+   ³     ³        ÃÄwriteToOutput  0/100  Ram=11
+   ³     ³        ³  ÀÄ*
+   ³     ³        ÀÄwriteToOutput  0/100  Ram=11
+   ³     ³           ÀÄ*
+   ³     ÃÄisControlChar  0/42  Ram=1
+   ³     ÃÄonControlInput  0/548  Ram=11
+   ³     ³  ÃÄonAutocompleteRequest  0/776  Ram=19
+   ³     ³  ³  ÃÄgetAutocompletedCommand  0/562  Ram=29
+   ³     ³  ³  ³  ÀÄ*
+   ³     ³  ³  ÃÄwriteToOutput  0/100  Ram=11
+   ³     ³  ³  ³  ÀÄ*
+   ³     ³  ³  ÃÄclearCurrentLine  0/224  Ram=12
+   ³     ³  ³  ³  ÀÄ*
+   ³     ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³     ³  ³  ÃÄwriteToOutput  0/100  Ram=11
+   ³     ³  ³  ³  ÀÄ*
+   ³     ³  ³  ÃÄwriteToOutput  0/100  Ram=11
+   ³     ³  ³  ³  ÀÄ*
+   ³     ³  ³  ÃÄwriteToOutput  0/100  Ram=11
+   ³     ³  ³  ³  ÀÄ*
+   ³     ³  ³  ÀÄwriteToOutput  0/100  Ram=11
+   ³     ³  ³     ÀÄ*
+   ³     ³  ÃÄwriteToOutput  0/100  Ram=11
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄparseCommand  0/1208  Ram=25
+   ³     ³  ³  ÃÄhistoryPut  0/558  Ram=22
+   ³     ³  ³  ³  ÃÄstrlen  0/56  Ram=5
+   ³     ³  ³  ³  ÃÄhistoryRemove  0/420  Ram=16
+   ³     ³  ³  ³  ³  ÃÄembeddedCliGetTokenVariable  0/70  Ram=6
+   ³     ³  ³  ³  ³  ³  ÀÄgetTokenPosition  0/148  Ram=11
+   ³     ³  ³  ³  ³  ÃÄstrcmp  0/120  Ram=5
+   ³     ³  ³  ³  ³  ÃÄstrlen  0/56  Ram=5
+   ³     ³  ³  ³  ³  ÀÄmemmove  0/224  Ram=13
+   ³     ³  ³  ³  ÃÄhistoryGet  0/92  Ram=6
+   ³     ³  ³  ³  ³  ÀÄ*
+   ³     ³  ³  ³  ÃÄstrlen  0/56  Ram=5
+   ³     ³  ³  ³  ÀÄmemmove  0/224  Ram=13
+   ³     ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³     ³  ³  ÃÄstrcmp  0/120  Ram=5
+   ³     ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³     ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³     ³  ³  ÃÄembeddedCliTokenizeArgs  0/202  Ram=12
+   ³     ³  ³  ³  ÀÄstrchr  0/62  Ram=4
+   ³     ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³     ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³     ³  ³  ÃÄonHelp  0/1482  Ram=121
+   ³     ³  ³  ³  ÃÄwriteToOutput  0/100  Ram=11
+   ³     ³  ³  ³  ³  ÀÄ*
+   ³     ³  ³  ³  ÃÄwriteToOutput  0/100  Ram=11
+   ³     ³  ³  ³  ³  ÀÄ*
+   ³     ³  ³  ³  ÃÄembeddedCliGetTokenCount  0/98  Ram=6
+   ³     ³  ³  ³  ÃÄwriteToOutput  0/100  Ram=11
+   ³     ³  ³  ³  ³  ÀÄ*
+   ³     ³  ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³     ³  ³  ³  ÃÄwriteToOutput  0/100  Ram=11
+   ³     ³  ³  ³  ³  ÀÄ*
+   ³     ³  ³  ³  ÃÄwriteToOutput  0/100  Ram=11
+   ³     ³  ³  ³  ³  ÀÄ*
+   ³     ³  ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³     ³  ³  ³  ÃÄwriteChar  0/2  Ram=3
+   ³     ³  ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³     ³  ³  ³  ÃÄwriteToOutput  0/100  Ram=11
+   ³     ³  ³  ³  ³  ÀÄ*
+   ³     ³  ³  ³  ÃÄwriteToOutput  0/100  Ram=11
+   ³     ³  ³  ³  ³  ÀÄ*
+   ³     ³  ³  ³  ÃÄembeddedCliGetToken  0/66  Ram=6
+   ³     ³  ³  ³  ³  ÀÄ*
+   ³     ³  ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³     ³  ³  ³  ÃÄstrcmp  0/120  Ram=5
+   ³     ³  ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³     ³  ³  ³  ÃÄwriteToOutput  0/100  Ram=11
+   ³     ³  ³  ³  ³  ÀÄ*
+   ³     ³  ³  ³  ÃÄwriteToOutput  0/100  Ram=11
+   ³     ³  ³  ³  ³  ÀÄ*
+   ³     ³  ³  ³  ÃÄwriteToOutput  0/100  Ram=11
+   ³     ³  ³  ³  ³  ÀÄ*
+   ³     ³  ³  ³  ÃÄwriteChar  0/2  Ram=3
+   ³     ³  ³  ³  ÃÄwriteToOutput  0/100  Ram=11
+   ³     ³  ³  ³  ³  ÀÄ*
+   ³     ³  ³  ³  ÃÄwriteToOutput  0/100  Ram=11
+   ³     ³  ³  ³  ³  ÀÄ*
+   ³     ³  ³  ³  ÃÄwriteToOutput  0/100  Ram=11
+   ³     ³  ³  ³  ³  ÀÄ*
+   ³     ³  ³  ³  ÃÄwriteToOutput  0/100  Ram=11
+   ³     ³  ³  ³  ³  ÀÄ*
+   ³     ³  ³  ³  ÃÄonUnknownCommand  0/358  Ram=72
+   ³     ³  ³  ³  ³  ÃÄwriteToOutput  0/100  Ram=11
+   ³     ³  ³  ³  ³  ³  ÀÄ*
+   ³     ³  ³  ³  ³  ÃÄwriteToOutput  0/100  Ram=11
+   ³     ³  ³  ³  ³  ³  ÀÄ*
+   ³     ³  ³  ³  ³  ÃÄwriteToOutput  0/100  Ram=11
+   ³     ³  ³  ³  ³  ³  ÀÄ*
+   ³     ³  ³  ³  ³  ÀÄwriteToOutput  0/100  Ram=11
+   ³     ³  ³  ³  ³     ÀÄ*
+   ³     ³  ³  ³  ÃÄwriteToOutput  0/100  Ram=11
+   ³     ³  ³  ³  ³  ÀÄ*
+   ³     ³  ³  ³  ÀÄwriteToOutput  0/100  Ram=11
+   ³     ³  ³  ³     ÀÄ*
+   ³     ³  ³  ÃÄonCommand  0/2  Ram=4
+   ³     ³  ³  ÀÄonUnknownCommand  0/358  Ram=72
+   ³     ³  ³     ÀÄ*
+   ³     ³  ÃÄwriteToOutput  0/100  Ram=11
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄwriteChar  0/2  Ram=3
+   ³     ³  ÃÄwriteChar  0/2  Ram=3
+   ³     ³  ÃÄwriteChar  0/2  Ram=3
+   ³     ³  ÀÄonAutocompleteRequest  0/776  Ram=19
+   ³     ³     ÀÄ*
+   ³     ÃÄisDisplayableChar  0/24  Ram=1
+   ³     ÃÄonCharInput  0/266  Ram=11
+   ³     ³  ÀÄwriteChar  0/2  Ram=3
+   ³     ÀÄprintLiveAutocompletion  0/436  Ram=17
+   ³        ÀÄ*
+   ÀÄ@GOTOPTR  0/20  Ram=0

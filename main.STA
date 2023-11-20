@@ -1,0 +1,94 @@
+
+ROM used:   11916/131072 (9%)
+            11916/131072 (9%) including unused fragments
+
+            1.8 Average locations per line
+            14.5 Average locations per statement
+
+RAM used:   54/12800 (0%) at main() level
+            288/12800 (2%) worst case
+
+Stack used: 5 worst case (4 in main + 1 for interrupts)
+Stack size: 126
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   49     6   1  main.c
+   21     0   0  main.h
+ 3065     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Devices\18F57Q84.h
+ 1543   454  55  embedded_cli.h
+   39     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdbool.h
+  195     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdint.h
+ 1354   359  44  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlib.h
+   32     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h
+  435     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h
+   28     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h
+----- -----
+ 6761   819 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0    224   1   13    496  8.2  memmove
+0    120   1    5    231  6.6  strcmp
+0     62   0    4    145  5.0  strchr
+0     56   0    5    129  4.6  strlen
+0     68   0    5             @DIV1616
+0     20   0    0             @GOTOPTR
+0     34   0    5             @MUL1616
+0     50   0    0    284  3.1  embeddedCliDefaultConfig
+0    320   1    8   1031  5.4  embeddedCliRequiredSize
+0   1006   4   17   2933  9.6  embeddedCliNew
+0     28   0    0     45  1.7  @MEMSET
+0     26   0    2     27  1.5  embeddedCliNewDefault
+0    474   2   11   1296  9.6  embeddedCliProcess
+0    204   1   19    253  5.5  embeddedCliAddBinding
+0    202   1   12    977 10.5  embeddedCliTokenizeArgs
+0     66   0    6    154  5.3  embeddedCliGetToken
+0     70   0    6    155  4.9  embeddedCliGetTokenVariable
+0     98   0    6    327  6.5  embeddedCliGetTokenCount
+0    552   2   13   1100  9.1  navigateHistory
+0     94   0    8    318  6.9  onEscapedInput
+0    266   1   11    357  6.1  onCharInput
+0    548   2   11   1205  8.3  onControlInput
+0   1208   5   25   2629 12.2  parseCommand
+0    204   1   41    110  2.4  initInternalBindings
+0   1482   6  121   2446  9.9  onHelp
+0    358   2   72    219  3.5  onUnknownCommand
+0    562   2   29   1709 12.1  getAutocompletedCommand
+0    436   2   17    958  9.0  printLiveAutocompletion
+0    776   3   19   1452  9.8  onAutocompleteRequest
+0    224   1   12    419  5.5  clearCurrentLine
+0    100   0   11    210  5.5  writeToOutput
+0     42   0    1    108  2.6  isControlChar
+0     24   0    1     55  2.6  isDisplayableChar
+0    204   1    4    211  5.2  fifoBufAvailable
+0    224   1    9    260  5.5  fifoBufPop
+0    558   2   22    983 11.1  historyPut
+0     92   0    6    147  4.8  historyGet
+0    420   2   16    889 10.5  historyRemove
+0    148   1   11    456  7.8  getTokenPosition
+0      2   0    3     25  1.6  writeChar
+0      2   0    4     29  1.6  onCommand
+0    258   1    4    160  3.1  MAIN
+ Inline         0     45  1.7  @cinit1
+
+Program metrics:
+    Functions               40
+    Statements              819
+    Comments                1492
+    Volume (V)              43521
+    Difficulty (D)          252.0
+    Effort to implement (E) 10966591
+    Time to implement (T)   169 hours, 14 minutes
+    Est Delivered Bugs (B)  16
+    Cyclomatic Complexity   103
+    Maintainability (MI)    83
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-0FFFE  11912  53620  
+10000-1FFFE     0  65536  
+
+
+
